@@ -1,5 +1,10 @@
+// eslint-disable-next-line react/prop-types
 const Dummy = ({wrongLetters}) => {
   const calculateErorNumber = ()=>{
+    // eslint-disable-next-line react/prop-types
+    if (wrongLetters.length > 13){
+      return
+    }
     // eslint-disable-next-line react/prop-types
     return wrongLetters.length
   }

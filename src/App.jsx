@@ -63,6 +63,8 @@ function App() {
     }
   };
 
+  const gameOver = wrongLetters.length > 12
+
   return (
     <div className="page">
       <Header text="Spooky Hangman Game" />
@@ -74,12 +76,20 @@ function App() {
             path="/"
             element={
               <main className="main">
-                <Text
+                {!gameOver && (<Text
                   renderSolutionLetters={renderSolutionLetters}
                   renderWrongLetters={renderWrongLetters}
                   value={chart}
                   handleLastLetter={handleLastLetter}
-                />
+                />)}
+                {gameOver && (
+                  <div>
+                  <div>Game over</div>
+                  <div className="calabaza">
+                      <img className="calabaza_gif" src="https://i.pinimg.com/originals/88/8c/2a/888c2a5b2f0a7a22da8d82b56ca2828d.gif"></img>
+                    </div>
+                  </div>
+                )}
                 <Dummy 
                   wrongLetters={wrongLetters}/>
               </main>
