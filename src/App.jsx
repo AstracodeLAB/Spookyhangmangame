@@ -63,7 +63,7 @@ function App() {
 
   return (
     <div className="page">
-      <Header text="Juego del ahorcado" />
+      <Header text="Spooky Hangman Game" />
       <BrowserRouter>
         <Routes>
           <Route path="/instructions" element={<Instructions />} />
