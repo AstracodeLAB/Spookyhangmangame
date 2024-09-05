@@ -23,6 +23,7 @@ function App() {
   
   }, []);
 
+  //Mostrar las letras correctas
   const renderSolutionLetters = () => {
     const wordLetters = keyword.split("");
     return wordLetters.map((letter, index) => {
@@ -38,6 +39,7 @@ function App() {
     });
   };
 
+  //Mostrar las letras erróneas
   const renderWrongLetters = () => {
     return wrongLetters.map((error, index) => {
       return (
@@ -78,7 +80,8 @@ function App() {
                   value={chart}
                   handleLastLetter={handleLastLetter}
                 />
-                <Dummy />
+                <Dummy 
+                  wrongLetters={wrongLetters}/>
               </main>
             }
           />
