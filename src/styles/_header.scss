@@ -1,6 +1,18 @@
+.header {
+display:flex;
+justify-content: center;
+flex-wrap: wrap;
+
+}
+
 .header__title {
   padding-bottom: 2rem;
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  padding: 30px;
 }

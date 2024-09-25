@@ -67,6 +67,7 @@ function App() {
 
   return (
     <div className="page">
+      
       <Header text="Spooky Hangman Game" />
       <BrowserRouter>
         <Routes>
