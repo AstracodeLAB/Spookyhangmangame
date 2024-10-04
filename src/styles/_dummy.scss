@@ -31,11 +31,25 @@ $dummyTransitionTime: 1s;
     position: absolute;
     font-size: 1.75rem;
     font-weight: bold;
+    padding: 0.5rem;
     color: $dummyDisabledColor;
     transition: color $dummyTransitionTime ease;
 
     &::before {
-      content: '×';
+      content: 'x';
+    }
+  }
+  .tongue {
+  position: absolute;
+  display:none;
+    font-size: 1.75rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    color: $dummyDisabledColor;
+    transition: color $dummyTransitionTime ease;
+  
+    &::before {
+      content: '👅';
     }
   }
 
@@ -74,13 +88,13 @@ $dummyTransitionTime: 1s;
 
   .error-6 {
     top: 7.5rem;
-    left: 8.75rem;
+    left: 8.5rem;
   }
 
   .error-7 {
     transform: rotate(90deg);
     width: 6rem;
-    top: 13.5rem;
+    top: 14.2rem;
     left: 7.5rem;
   }
 
@@ -122,8 +136,14 @@ $dummyTransitionTime: 1s;
     left: 10.5rem;
   }
 
+  .error-14 {
+    top: 9.2rem;
+    left: 9.3rem;
+    z-index: 1;
+  }
+
   // https://sass-lang.com/documentation/at-rules/control/for
-  @for $e from 1 through 13 {
+  @for $e from 1 through 14 {
     @for $s from 1 through $e {
       &.error-#{$e} {
         .error-#{$s}.line {
@@ -136,6 +156,10 @@ $dummyTransitionTime: 1s;
 
         .error-#{$s}.eye {
           color: $dummyEnabledColor;
+        }
+        .error-#{$s}.tongue {
+          color: $dummyEnabledColor;
+          display:block;
         }
       }
     }

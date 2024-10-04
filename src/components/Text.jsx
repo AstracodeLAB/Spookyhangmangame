@@ -1,6 +1,16 @@
+import { useState } from "react";
+import { allowedCharsRegExp } from "./alpha";
+
 const Text = (props) => {
+ 
+  const [char, setChar] = useState('')
+  
   const handleInput = (ev) => {
-    props.handleLastLetter(ev.key);
+    // eslint-disable-next-line react/prop-types
+    if (!ev.key.match(allowedCharsRegExp)) return
+    //si ha pasado menos de un segundo no hagas nada
+    setChar(ev.key.toUpperCase())
+    props.handleLastLetter(ev.key.toUpperCase());
   };
 
   const handleOnSumbit = (ev) => {
@@ -21,8 +31,8 @@ const Text = (props) => {
           Escribe una letra:
         </label>
         <input
-          onChange={()=>{}}
-          defaultValue={props.value}
+          onChange={() => {}}
+          value={char}
           onKeyUp={handleInput}
           autoComplete="off"
           className="form__input"

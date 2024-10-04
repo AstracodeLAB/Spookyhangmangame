@@ -11,8 +11,53 @@
 
 body {
   margin: 0;
+  border-spacing: 0;
+  padding: 0;
+  border: 0;
   display: flex;
   justify-content: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+
+.game-over, 
+.game-over-retry {
+  font-family: "Eater", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.game-over-retry {
+  font-size: 1rem;
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+    }
+  
+    @media (min-width: 1024px) {}
+}
+
+.game-over-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #8c52ff;
+  font-family: "Eater", sans-serif;
+  font-size: 0.8rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+
+
+  &:hover {
+    background-color: #473864;
+  }
+        
+}
+.game-over-cont{
+  display: flex;
+  justify-content: center;
+
 }

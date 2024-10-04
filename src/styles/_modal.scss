@@ -12,17 +12,17 @@
 }
 
 .modal-content {
-  background-color: white;
+  background-color: rgba(62, 49, 49, 0.644);
   padding: 20px;
   border-radius: 10px;
-  width: 400px;
+  width: 800px;
   max-width: 100%;
   text-align: center;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 
   img {
-    width: 100px;
-    height: 100px;
+    width: 350px;
+    height: 150px;
     margin-bottom: 15px;
   }
 
@@ -34,22 +34,82 @@
     margin-bottom: 20px;
   }
 
+  .skeleton{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+  }
+  .cat{
+    width: 80px;
+    height: 82px;
+  }
+  .message-win{
+    font-size: 1.5rem;
+    padding-left: 15px;
+  }
+
+  .message-astra{
+    margin: 0px;
+    font-size:1.2rem ;
+  }
+  .green{
+    color:#bfff00;
+  }
+  .message-astra-advice{
+    font-size: 0.8rem;
+    margin-bottom: 40px;
+  }
+  .image-movie{
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+  }
   .modal-buttons {
     display: flex;
     justify-content: space-around;
 
     button {
+      margin-top: 15px;
       padding: 10px 20px;
       border: none;
-      background-color: #007bff;
+      background-color: #8c52ff;
       color: white;
       cursor: pointer;
       border-radius: 5px;
       transition: background-color 0.3s ease;
 
       &:hover {
-        background-color: #0056b3;
+        background-color: #473864;
       }
     }
   }
+}
+.movie-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: 10px;
+    @media (max-width: 1024px) {
+        font-size: 18px;
+        flex-direction: row;
+      }
+    
+      @media (max-width: 768px) {
+
+      }
+    
+
+
+}
+.movie-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 0.8rem;
+  width: 45%;
 }

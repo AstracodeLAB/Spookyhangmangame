@@ -1,15 +1,16 @@
 // eslint-disable-next-line react/prop-types
 const Dummy = ({wrongLetters}) => {
-  const calculateErorNumber = ()=>{
+  const calculateErrorNumber = ()=>{
     // eslint-disable-next-line react/prop-types
-    if (wrongLetters.length > 13){
+    if (wrongLetters.length > 14){
       return
     }
     // eslint-disable-next-line react/prop-types
     return wrongLetters.length
   }
   return (
-    <section className={`dummy error-${calculateErorNumber()}`}>
+    <section className={`dummy error-${calculateErrorNumber()}`}>
+      <span className="error-14 tongue"></span>
       <span className="error-13 eye"></span>
       <span className="error-12 eye"></span>
       <span className="error-11 line"></span>
