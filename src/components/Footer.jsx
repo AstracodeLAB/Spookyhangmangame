@@ -5,7 +5,7 @@ const Footer = () => {
 	return (
 		<footer className='footer'>
 			<small className='footer__copy'>©Astracodelab</small>
-			<div>
+			<div className='footer__content'>
 				<p>¿Necesitas una web?</p>
 				<div className='footer__socials'>
 					<a href='https://www.linkedin.com' target='_blank' rel='noopener noreferrer'>
