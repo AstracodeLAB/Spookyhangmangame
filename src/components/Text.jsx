@@ -18,8 +18,10 @@ const Text = (props) => {
 	return (
 		<section>
 			<div className='gameInstructions'>
-				<p>Te retamos a adivinar películas de miedo en este juego del ahorcado (versión Halloween).</p>
-				<p>Cada día una nueva peli y una sorpresa especial si la adivinas...</p>
+				<p className='gameInstructions__paragraph'>
+					Te retamos a adivinar películas de miedo en este juego del ahorcado (versión Halloween).
+				</p>
+				<p className='gameInstructions__paragraph'>Cada día una nueva peli y una sorpresa especial si la adivinas...</p>
 			</div>
 			<div className='solution'>
 				<h2 className='title'>Solución:</h2>
