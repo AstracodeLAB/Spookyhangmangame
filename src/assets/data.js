@@ -1,4 +1,4 @@
- const movies = JSON.parse(`[
+const movies = JSON.parse(`[
 	{
 		"id": 1,
 		"day":20241022,
@@ -27,7 +27,7 @@
 	},
 	{
 		"id": 3,
-		"day": 20241024,
+		"day": 20241010,
 		"movie": "EL SILENCIO DE LOS CORDEROS",
 		"title_win": "El silencio de los corderos",
 		"year_win": 1991,
@@ -40,7 +40,7 @@
 	},
 	{
 		"id": 4,
-		"day": 2024104,
+		"day": 20241025,
 		"movie": "ALIEN",
 		"title_win": "Alien",
 		"year_win": 1979,
@@ -131,7 +131,6 @@
 		"message_lose": "¡Oh no! Pareces haber caído en las manos del festival de Midsommar... ¡Intenta de nuevo para no formar parte de su próximo ritual! 🌻🔪 Gracias por participar en nuestros 10 días de terror. Te esperamos el próximo Halloween... ¡si te atreves a volver! 🎃",
 		"image_lose": "ruta/a/image_perder_midsommar.png"
 	}
-]`)
+]`);
 
-export default movies
-
+export default movies;
