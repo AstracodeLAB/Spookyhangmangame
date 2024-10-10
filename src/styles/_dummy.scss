@@ -8,6 +8,12 @@ $dummyTransitionTime: 1s;
   min-width: 15rem;
   height: 25rem;
 
+  @media (max-width: 767px) {
+    margin: 0;
+    position: absolute;
+    
+  }
+
   .line {
     position: absolute;
     display: block;
