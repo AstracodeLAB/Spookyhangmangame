@@ -14,7 +14,7 @@ const movies = JSON.parse(`[
 	},
 	{
 		"id": 2,
-		"day": 20241023,
+		"day": 20241014,
 		"movie": "CARRIE",
 		"title_win": "Carrie",
 		"year_win": 1976,
