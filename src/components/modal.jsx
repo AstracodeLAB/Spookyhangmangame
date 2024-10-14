@@ -4,7 +4,6 @@ import Bat from '../assets/bat.svg';
 const Modal = ({ showModal, closeModal, todayMovie }) => {
   if (!showModal) return null; // Si showModal es false, no muestra nada
   //if (closeModal) return null; // Si showModal es false, no muestra nada
- 
 
   return (
     <div className="modal-overlay">
@@ -28,7 +27,7 @@ const Modal = ({ showModal, closeModal, todayMovie }) => {
           <span>{todayMovie.description_win}</span>
         </div>
           <audio autoPlay>
-            <source src="bats.mp3" type="audio/mp3" />
+            <source src="aleteo.mp3" type="audio/mp3" />
             Tu navegador no soporta el elemento de audio.
           </audio>
        </div>

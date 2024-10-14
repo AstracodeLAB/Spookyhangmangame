@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Header from "@components/Header";
 import Text from "@components/Text";
 import Footer from "@components/Footer";
@@ -25,8 +25,7 @@ function App() {
 
   //Aqui pondremos un objeto: cada día el nombre de una peli
   useEffect(() => {
-
-    const spookyMovie = getMovie()
+     const spookyMovie = getMovie()
     console.log(spookyMovie.movie)
     setKeyword(spookyMovie.movie);
     setTodayMovie(spookyMovie)
