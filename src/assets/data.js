@@ -1,7 +1,7 @@
- const movies = JSON.parse(`[
+const movies = JSON.parse(`[
 	{
 		"id": 1,
-		"day":20241022,
+		"day":2024122,
 		"movie":  "JENNIFERS BODY",
 		"title_win": "Jennifer's Body",
 		"year_win": 2010,
@@ -131,7 +131,6 @@
 		"message_lose": "¡Oh no! Pareces haber caído en las manos del festival de Midsommar... ¡Intenta de nuevo para no formar parte de su próximo ritual! 🌻🔪 Gracias por participar en nuestros 10 días de terror. Te esperamos el próximo Halloween... ¡si te atreves a volver! 🎃",
 		"image_lose": "ruta/a/image_perder_midsommar.png"
 	}
-]`)
+]`);
 
-export default movies
-
+export default movies;
