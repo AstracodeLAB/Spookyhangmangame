@@ -75,14 +75,15 @@
       margin-top: 15px;
       padding: 10px 20px;
       border: none;
-      background-color: #8c52ff;
-      color: white;
+      background-color: #FB3C2D;
+      font-family: "Creepster", system-ui;
+      color: black;
       cursor: pointer;
       border-radius: 5px;
       transition: background-color 0.3s ease;
 
       &:hover {
-        background-color: #473864;
+        background-color: #FF7603;
       }
     }
   }
