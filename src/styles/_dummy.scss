@@ -39,129 +39,236 @@ $dummyTransitionTime: 1s;
       content: 'x';
     }
   }
+
   .tongue {
-  position: absolute;
-  display:none;
+    position: absolute;
+    display: none;
     font-size: 1.75rem;
     font-weight: bold;
     padding: 0.5rem;
     color: $dummyDisabledColor;
     transition: color $dummyTransitionTime ease;
-  
+
     &::before {
       content: '👅';
     }
   }
 
-  .error-1 {
-    width: 6rem;
-    left: 0;
-    bottom: 0;
+  // Define tamaños para mobile (mitad del tamaño actual)
+  @media (max-width: 767px) {
+    min-width: 7.5rem;  // Mitad de 15rem
+    height: 12.5rem;    // Mitad de 25rem
+
+    .line {
+      height: 0.25rem;  // Reducir el grosor también en mobile
+    }
+
+    .head {
+      width: 1.75rem;   // Mitad de 3.5rem
+      height: 1.75rem;
+      border-width: 0.25rem;
+    }
+
+    .eye, .tongue {
+      font-size: 0.875rem; // Mitad de 1.75rem
+      padding: 0.25rem;
+    }
+
+    // Ajustes específicos para cada error
+    .error-1 {
+      width: 3rem;  // Mitad de 6rem
+      bottom: 0;
+    }
+
+    .error-2 {
+      transform: rotate(90deg);
+      width: 11.5rem; // Mitad de 23rem
+      top: 6.5rem;    // Ajuste proporcional de la posición
+      left: -4.25rem; // Mitad de -8.5rem
+    }
+
+    .error-3 {
+      width: 4rem;    // Mitad de 8rem
+      top: 0.875rem;  // Mitad de 1.75rem
+      left: 1.375rem; // Mitad de 2.75rem
+    }
+
+    .error-4 {
+      transform: rotate(135deg);
+      width: 2rem;    // Mitad de 4rem
+      top: 1.5rem;    // Mitad de 3rem
+      left: 1.125rem; // Mitad de 2.25rem
+    }
+
+    .error-5 {
+      transform: rotate(90deg);
+      width: 3rem;    // Mitad de 6rem
+      top: 2.25rem;   // Mitad de 4.5rem
+      left: 3.75rem;  // Mitad de 7.5rem
+    }
+
+    .error-6 {
+      top: 3.75rem;   // Mitad de 7.5rem
+      left: 4.25rem;  // Mitad de 8.5rem
+    }
+
+    .error-7 {
+      transform: rotate(90deg);
+      width: 3rem;    // Mitad de 6rem
+      top: 7.1rem;    // Mitad de 14.2rem
+      left: 3.75rem;  // Mitad de 7.5rem
+    }
+
+    .error-8 {
+      transform: rotate(60deg);
+      width: 1.5rem;  // Mitad de 3rem
+      top: 6.75rem;   // Mitad de 13.5rem
+      left: 4.875rem; // Mitad de 9.75rem
+    }
+
+    .error-9 {
+      transform: rotate(120deg);
+      width: 1.5rem;  // Mitad de 3rem
+      top: 6.75rem;   // Mitad de 13.5rem
+      left: 4.125rem; // Mitad de 8.25rem
+    }
+
+    .error-10 {
+      transform: rotate(60deg);
+      width: 2rem;    // Mitad de 4rem
+      top: 9rem;      // Mitad de 18rem
+      left: 4.75rem;  // Mitad de 9.5rem
+    }
+
+    .error-11 {
+      transform: rotate(120deg);
+      width: 2rem;    // Mitad de 4rem
+      top: 9rem;      // Mitad de 18rem
+      left: 3.75rem;  // Mitad de 7.5rem
+    }
+
+    .error-12 {
+      top: 3.75rem;   // Mitad de 7.5rem
+      left: 4.75rem;  // Mitad de 9.5rem
+    }
+
+    .error-13 {
+      top: 3.75rem;   // Mitad de 7.5rem
+      left: 5.25rem;  // Mitad de 10.5rem
+    }
+
+    .error-14 {
+      top: 4.6rem;    // Mitad de 9.2rem
+      left: 4.65rem;  // Mitad de 9.3rem
+      z-index: 1;
+    }
   }
 
-  .error-2 {
-    transform: rotate(90deg);
-    width: 23rem;
-    top: 13rem;
-    left: -8.5rem;
+  // Estilos para pantallas grandes (escritorio)
+  @media (min-width: 768px) {
+    min-width: 15rem;
+    height: 25rem;
+
+    // Mantén los estilos actuales para todas las partes del dummy
+    .error-1 {
+      width: 6rem;
+      bottom: 0;
+      left: 0;
+    }
+
+    .error-2 {
+      transform: rotate(90deg);
+      width: 23rem;
+      top: 13rem;
+      left: -8.5rem;
+    }
+
+    .error-3 {
+      width: 8rem;
+      top: 1.75rem;
+      left: 2.75rem;
+    }
+
+    .error-4 {
+      transform: rotate(135deg);
+      width: 4rem;
+      top: 3rem;
+      left: 2.25rem;
+    }
+
+    .error-5 {
+      transform: rotate(90deg);
+      width: 6rem;
+      top: 4.5rem;
+      left: 7.5rem;
+    }
+
+    .error-6 {
+      top: 7.5rem;
+      left: 8.5rem;
+    }
+
+    .error-7 {
+      transform: rotate(90deg);
+      width: 6rem;
+      top: 14.2rem;
+      left: 7.5rem;
+    }
+
+    .error-8 {
+      transform: rotate(60deg);
+      width: 3rem;
+      top: 13.5rem;
+      left: 9.75rem;
+    }
+
+    .error-9 {
+      transform: rotate(120deg);
+      width: 3rem;
+      top: 13.5rem;
+      left: 8.25rem;
+    }
+
+    .error-10 {
+      transform: rotate(60deg);
+      width: 4rem;
+      top: 18rem;
+      left: 9.5rem;
+    }
+
+    .error-11 {
+      transform: rotate(120deg);
+      width: 4rem;
+      top: 18rem;
+      left: 7.5rem;
+    }
+
+    .error-12 {
+      top: 7.5rem;
+      left: 9.5rem;
+    }
+
+    .error-13 {
+      top: 7.5rem;
+      left: 10.5rem;
+    }
+
+    .error-14 {
+      top: 9.2rem;
+      left: 9.3rem;
+      z-index: 1;
+    }
   }
+}
 
-  .error-3 {
-    width: 8rem;
-    top: 1.75rem;
-    left: 2.75rem;
-  }
-
-  .error-4 {
-    transform: rotate(135deg);
-    width: 4rem;
-    top: 3rem;
-    left: 2.25rem;
-  }
-
-  .error-5 {
-    transform: rotate(90deg);
-    width: 6rem;
-    top: 4.5rem;
-    left: 7.5rem;
-  }
-
-  .error-6 {
-    top: 7.5rem;
-    left: 8.5rem;
-  }
-
-  .error-7 {
-    transform: rotate(90deg);
-    width: 6rem;
-    top: 14.2rem;
-    left: 7.5rem;
-  }
-
-  .error-8 {
-    transform: rotate(60deg);
-    width: 3rem;
-    top: 13.5rem;
-    left: 9.75rem;
-  }
-
-  .error-9 {
-    transform: rotate(120deg);
-    width: 3rem;
-    top: 13.5rem;
-    left: 8.25rem;
-  }
-
-  .error-10 {
-    transform: rotate(60deg);
-    width: 4rem;
-    top: 18rem;
-    left: 9.5rem;
-  }
-
-  .error-11 {
-    transform: rotate(120deg);
-    width: 4rem;
-    top: 18rem;
-    left: 7.5rem;
-  }
-
-  .error-12 {
-    top: 7.5rem;
-    left: 9.5rem;
-  }
-
-  .error-13 {
-    top: 7.5rem;
-    left: 10.5rem;
-  }
-
-  .error-14 {
-    top: 9.2rem;
-    left: 9.3rem;
-    z-index: 1;
-  }
-
-  // https://sass-lang.com/documentation/at-rules/control/for
-  @for $e from 1 through 14 {
-    @for $s from 1 through $e {
-      &.error-#{$e} {
-        .error-#{$s}.line {
-          background-color: $dummyEnabledColor;
-        }
-
-        .error-#{$s}.head {
-          border-color: $dummyEnabledColor;
-        }
-
-        .error-#{$s}.eye {
-          color: $dummyEnabledColor;
-        }
-        .error-#{$s}.tongue {
-          color: $dummyEnabledColor;
-          display:block;
-        }
+// https://sass-lang.com/documentation/at-rules/control/for
+@for $e from 1 through 14 {
+  @for $s from 1 through $e {
+    .dummy.error-#{$e} {
+      .error-#{$s}.line {
+        background-color: $dummyEnabledColor;
       }
+
     }
   }
 }
