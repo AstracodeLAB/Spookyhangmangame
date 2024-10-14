@@ -6,12 +6,13 @@ const Text = (props) => {
   const [char, setChar] = useState('')
   
   const handleInput = (ev) => {
+    console.log(ev.target.value)
     // eslint-disable-next-line react/prop-types
-    if (!ev.key.match(allowedCharsRegExp)) return
+    if (!ev.target.value.match(allowedCharsRegExp)) return
     //si ha pasado menos de un segundo no hagas nada
-    setChar(ev.key.toUpperCase())
+    setChar(ev.target.value.toUpperCase())
 
-    props.handleLastLetter(ev.key.toUpperCase());
+    props.handleLastLetter(ev.target.value.toUpperCase());
   };
   setTimeout(() => {
     setChar(''); 
@@ -38,7 +39,7 @@ const Text = (props) => {
         <input
           onChange={() => {}}
           value={char}
-          onKeyUp={handleInput}
+          onInput={handleInput}
           autoComplete="off"
           className="form__input"
           maxLength="1"

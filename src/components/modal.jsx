@@ -27,6 +27,10 @@ const Modal = ({ showModal, closeModal, todayMovie }) => {
           <span>Director: {todayMovie.director_win}</span>
           <span>{todayMovie.description_win}</span>
         </div>
+          <audio autoPlay>
+            <source src="bats.mp3" type="audio/mp3" />
+            Tu navegador no soporta el elemento de audio.
+          </audio>
        </div>
         <div className="modal-buttons">
          <button onClick={closeModal}>Cerrar</button>
