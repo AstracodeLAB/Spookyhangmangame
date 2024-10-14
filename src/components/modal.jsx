@@ -1,10 +1,10 @@
+import Bat from '../assets/bat.svg'; 
 
 // eslint-disable-next-line react/prop-types
 const Modal = ({ showModal, closeModal, todayMovie }) => {
   if (!showModal) return null; // Si showModal es false, no muestra nada
   //if (closeModal) return null; // Si showModal es false, no muestra nada
-  console.log('ESTOY EN LA MODAL', todayMovie)
-
+ 
 
   return (
     <div className="modal-overlay">
@@ -21,7 +21,9 @@ const Modal = ({ showModal, closeModal, todayMovie }) => {
         <div className="movie-content">
           <img className="image-movie" src={todayMovie.image_win} alt="Placeholder" />
         <div className="movie-description">
+            <img className="bat_l" src={Bat} alt="Murcielago" />
           <h2>{todayMovie.title_win} ({todayMovie.year_win})</h2>
+            <img className="bat_r" src={Bat} alt="Murcielago" />
           <span>Director: {todayMovie.director_win}</span>
           <span>{todayMovie.description_win}</span>
         </div>

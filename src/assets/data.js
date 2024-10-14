@@ -1,7 +1,7 @@
  const movies = JSON.parse(`[
 	{
 		"id": 1,
-		"day":20241014,
+		"day":20241022,
 		"movie":  "JENNIFERS BODY",
 		"title_win": "Jennifer's Body",
 		"year_win": 2010,
@@ -14,7 +14,7 @@
 	},
 	{
 		"id": 2,
-		"day": 20241023,
+		"day": 20241014,
 		"movie": "CARRIE",
 		"title_win": "Carrie",
 		"year_win": 1976,

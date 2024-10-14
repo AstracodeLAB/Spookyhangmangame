@@ -10,8 +10,13 @@ const Text = (props) => {
     if (!ev.key.match(allowedCharsRegExp)) return
     //si ha pasado menos de un segundo no hagas nada
     setChar(ev.key.toUpperCase())
+
     props.handleLastLetter(ev.key.toUpperCase());
   };
+  setTimeout(() => {
+    setChar(''); 
+  }, 300); 
+
 
   const handleOnSumbit = (ev) => {
     ev.preventDefault();
