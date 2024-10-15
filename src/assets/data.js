@@ -4,6 +4,7 @@ const movies = JSON.parse(`[
 		"day": 20241014,
 		"movie": "JENNIFERS BODY",
 		"title_win": "Jennifer's Body",
+		"title_win_mobile": "En 'Jennifer's Body', una animadora poseída por un demonio se alimenta de los chicos de su instituto.",
 		"year_win": 2010,
 		"director_win": "Karyn Kusama",
 		"description_win": "Jennifer es una animadora poseída por un demonio que se alimenta de los chicos de su instituto...",
@@ -18,6 +19,7 @@ const movies = JSON.parse(`[
 		"day": 20241023,
 		"movie": "CARRIE",
 		"title_win": "Carrie",
+		"title_win_mobile": "En 'Carrie', una adolescente socialmente aislada desata su ira telequinética después de ser brutalmente acosada.",
 		"year_win": 1976,
 		"director_win": "Brian de Palma",
 		"description_win": "Cuenta la historia de Carrie White, una adolescente socialmente aislada que, después de ser brutalmente acosada...",
@@ -32,6 +34,7 @@ const movies = JSON.parse(`[
 		"day": 20241024,
 		"movie": "EL SILENCIO DE LOS CORDEROS",
 		"title_win": "El silencio de los corderos",
+		"title_win_mobile": "En 'El silencio de los corderos', una joven agente del FBI colabora con Hannibal Lecter para atrapar a un asesino.",
 		"year_win": 1991,
 		"director_win": "Jonathan Demme",
 		"description_win": "Clarice Starling es una joven agente del FBI que busca atrapar al asesino en serie Buffalo Bill con la ayuda de Hannibal Lecter...",
@@ -46,6 +49,7 @@ const movies = JSON.parse(`[
 		"day": 2024104,
 		"movie": "ALIEN",
 		"title_win": "Alien",
+		"title_win_mobile":"En 'Alien', la tripulación de la nave Nostromo lucha por sobrevivir contra un letal alienígena a bordo de su nave.",
 		"year_win": 1979,
 		"director_win": "Ridley Scott",
 		"description_win": "El film sigue a la tripulación de la nave espacial Nostromo, que se enfrenta a un letal alienígena...",
@@ -60,6 +64,7 @@ const movies = JSON.parse(`[
 		"day": 20241026,
 		"movie": "JOVENES Y BRUJAS",
 		"title_win": "Jóvenes y brujas",
+		"title_win_mobile": "En 'Jóvenes y brujas', un grupo de adolescentes marginadas descubre el poder de la brujería y sus consecuencias.",
 		"year_win": 1996,
 		"director_win": "Andrew Fleming",
 		"description_win": "Un grupo de adolescentes marginadas descubre el poder de la brujería...",
@@ -89,6 +94,7 @@ const movies = JSON.parse(`[
 		"day": 20241028,
 		"movie": "EL EXORCISTA",
 		"title_win": "El Exorcista",
+		"title_win_mobile": "En 'El Exorcista', Regan es poseída por un demonio, y dos sacerdotes luchan por liberarla.",
 		"year_win": 1973,
 		"director_win": "William Friedkin",
 		"description_win": "La película cuenta cómo Regan es poseída por un demonio, y el esfuerzo de su madre y dos sacerdotes por liberarla...",
@@ -103,6 +109,7 @@ const movies = JSON.parse(`[
 		"day": 20241029,
 		"movie": "REC",
 		"title_win": "REC",
+		"title_win_mobile": "En 'REC', un equipo de reporteros se infiltra en un edificio en cuarentena, enfrentándose a horrores sobrenaturales.",
 		"year_win": 2007,
 		"director_win": "Paco Plaza",
 		"description_win": "Película en formato de metraje encontrado que sigue a un equipo de reporteros que se infiltran en un edificio de apartamentos en cuarentena...",
@@ -117,6 +124,7 @@ const movies = JSON.parse(`[
 		"day": 20241030,
 		"movie": "HEREDITARY",
 		"title_win": "Hereditary",
+		"title_win_mobile": "En 'Hereditary', la familia Graham enfrenta tragedias que revelan oscuros secretos tras la muerte de la matriarca.",
 		"year_win": 2018,
 		"director_win": "Ari Aster",
 		"description_win": "La familia Graham enfrenta una serie de tragedias tras la muerte de la matriarca, revelando oscuros secretos familiares...",
@@ -127,19 +135,21 @@ const movies = JSON.parse(`[
 		"image_lose": "ruta/a/image_perder_hereditary.png"
 	},
 	{
-		"id": 10,
-		"day": 20241031,
-		"movie": "EL RESPLANDOR",
-		"title_win": "El Resplandor",
-		"year_win": 1980,
-		"director_win": "Stanley Kubrick",
-		"description_win": "Jack Torrance acepta el trabajo de vigilante en el Hotel Overlook, donde su cordura se ve amenazada por fuerzas sobrenaturales...",
-		"message_win": "🎉 ¡Felicidades! Lograste salir del Hotel Overlook antes de que Jack pudiera atraparte... ¡bien hecho! 🪓🏨",
-		"message_win_mobile": "🎉 ¡Escapaste del Overlook! 🪓",
-		"image_win": "./10.Resplandor-win.jpg",
-		"message_lose": "Oh no... parece que Jack Torrance te ha encontrado en los pasillos del Hotel Overlook. ¡Corre más rápido la próxima vez! 🪓🏨",
-		"image_lose": "ruta/a/image_perder_el_resplandor.png"
-	}
+	"id": 10,
+	"day": 20241031,
+	"movie": "MIDSOMMAR",
+	"title_win": "Midsommar",
+	"title_win_mobile": "En 'Midsommar', Dani y sus amigos se adentran en un festival sueco que oculta oscuros rituales paganos.",
+	"year_win": 2019,
+	"director_win": "Ari Aster",
+	"description_win": "Una pareja estadounidense se une a un festival sueco que solo ocurre cada 90 años, descubriendo que los rituales paganos esconden un oscuro secreto...",
+	"message_win": "🎉 ¡Felicidades! Has logrado escapar del festival de Midsommar antes de que las flores te atraparan... 🌸🔥",
+	"message_win_mobile": "🎉 ¡Escapaste del festival de Midsommar! 🌸",
+	"image_win": "./10.Midsommar-win.png",
+	"message_lose": "Oh no... parece que te han atrapado en el círculo de flores del festival. ¡Intenta salir antes de que te conviertan en parte de su ritual! 🌼🔥",
+	"image_lose": "ruta/a/image_perder_midsommar.png"
+}
+
 ]`);
 
 export default movies;
