@@ -18,7 +18,7 @@
 	margin: 20px;
 	border-radius: 10px;
 	width: 800px;
-	height: 80vh;
+	height: 90vh;
 	max-width: 100%;
 	text-align: center;
 	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -60,7 +60,7 @@
 	}
 	.message-win {
 		// padding: 20px;
-		margin: 0;
+		// margin: 0;
 
 		@media (min-width: 768px) {
 			font-size: 1.5rem;
@@ -70,6 +70,7 @@
 
   .message-box{
     background-color: black;
+    border-radius: 5%;
     padding: 0.5rem;
   }
 
@@ -101,7 +102,7 @@
 		border-radius: 50%;
 		overflow: hidden;
 		object-fit: cover;
-		margin: 20px;
+		margin: 0;
 	}
 	.modal-buttons {
 		display: flex;
@@ -143,7 +144,10 @@
 }
 
 .movie-title {
+  font-size: medium;
 	margin: 0;
+  padding: 10px;
+  font-weight: 100;
 }
 
 .movie-description {

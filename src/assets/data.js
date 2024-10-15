@@ -74,6 +74,7 @@ const movies = JSON.parse(`[
 		"day": 20241015,
 		"movie": "LA MUERTE OS SIENTA TAN BIEN",
 		"title_win": "La muerte os sienta tan bien",
+		"title_win_mobile": "En 'La muerte os sienta tan bien', Helen y Madeline toman una poción de inmortalidad con consecuencias hilarantes.",
 		"year_win": 1992,
 		"director_win": "Robert Zemeckis",
 		"description_win": "Comedia negra que sigue a Madeline y Helen, dos mujeres obsesionadas con la juventud y la belleza...",
