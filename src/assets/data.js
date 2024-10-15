@@ -61,7 +61,7 @@ const movies = JSON.parse(`[
 	},
 	{
 		"id": 5,
-		"day": 20241015,
+		"day": 20241026,
 		"movie": "JOVENES Y BRUJAS",
 		"title_win": "Jóvenes y brujas",
 		"title_win_mobile": "En 'Jóvenes y brujas', un grupo de adolescentes marginadas descubre el poder de la brujería y sus consecuencias.",
@@ -91,7 +91,7 @@ const movies = JSON.parse(`[
 	},
 	{
 		"id": 7,
-		"day": 20241028,
+		"day": 20241015,
 		"movie": "EL EXORCISTA",
 		"title_win": "El Exorcista",
 		"title_win_mobile": "En 'El Exorcista', Regan es poseída por un demonio, y dos sacerdotes luchan por liberarla.",
@@ -100,7 +100,7 @@ const movies = JSON.parse(`[
 		"description_win": "La película cuenta cómo Regan es poseída por un demonio, y el esfuerzo de su madre y dos sacerdotes por liberarla...",
 		"message_win": "🎉 ¡Felicidades! Has sobrevivido al terror del exorcismo... parece que Regan no pudo atraparte con sus demonios. 👹✝️ ",
 		"message_win_mobile": "🎉 ¡Sobreviviste al exorcismo! ✝️",
-		"image_win": "./7.Exorcista-win.webp",
+		"image_win": "./7.Exorcista-win.jpg",
 		"message_lose": "¡Oh no! El demonio de Regan te habría poseído... ¡mejor llama a un sacerdote para el próximo intento! 😈✝️",
 		"image_lose": "ruta/a/image_perder_el_exorcista.png"
 	},
