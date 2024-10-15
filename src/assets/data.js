@@ -78,7 +78,7 @@ const movies = JSON.parse(`[
 		"director_win": "Robert Zemeckis",
 		"description_win": "Comedia negra que sigue a Madeline y Helen, dos mujeres obsesionadas con la juventud y la belleza...",
 		"message_win": "🎉 ¡Felicidades! Parece que Madeline y Helen no lograron arrastrarte en su obsesión por la juventud eterna... ¡Tú sí que sabes envejecer con estilo! 💄🧪 ",
-		"message_win_mobile": "🎉 Madeline y Helen han podido convencerte... 💄🧪",
+		"message_win_mobile": "🎉 Madeline y Helen no han podido convencerte... 💄🧪",
 		"image_win": "./6.Muerte-win.jpg",
 		"message_lose": "¡Oh no! Te habrías unido a la inmortalidad de Madeline y Helen... ¡Pero a un alto precio! Intenta de nuevo antes de que la poción se acabe. 🧪👵",
 		"image_lose": "ruta/a/image_perder_la_muerte_os_sienta_tan_bien.png"

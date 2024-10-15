@@ -1,9 +1,9 @@
 .modal-overlay {
 	position: fixed;
 	top: 0;
-	left: 0;
-	width: 80%;
-	height: 90%;
+	// left: 5%;
+	width: 100%;
+	height: 100%;
 	// margin: 20px;
 	background: rgba(0, 0, 0, 0.7); // Fondo oscuro semitransparente
 	display: flex;
@@ -14,13 +14,15 @@
 
 .modal-content {
 	background-color: rgba(62, 49, 49, 0.644);
-	// padding: 20px;
-
+	padding: 20px;
+	margin: 20px;
 	border-radius: 10px;
 	width: 800px;
+	height: 80vh;
 	max-width: 100%;
 	text-align: center;
 	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	align-content: center;
 
 	img {
 		width: 350px;
@@ -37,10 +39,15 @@
 	}
 
 	.skeleton {
-		display: flex;
-		flex-direction: row;
-		justify-content: left;
-		align-items: center;
+		margin-bottom: 5px;
+		font-weight: bold;
+
+		@media (min-width: 768px) {
+			display: flex;
+			flex-direction: row;
+			justify-content: left;
+			align-items: center;
+		}
 	}
 	.cat {
 		display: none;
@@ -61,8 +68,14 @@
 		}
 	}
 
+  .message-box{
+    background-color: black;
+    padding: 0.5rem;
+  }
+
 	.message-astra {
-		margin: 0px;
+		margin: 0;
+    
 		// font-size:1.2rem ;
 	}
 	.green {
@@ -82,13 +95,13 @@
 		margin: 0;
 	}
 	.image-movie {
-    align-self: center;
+		align-self: center;
 		width: 150px;
 		height: 150px;
 		border-radius: 50%;
 		overflow: hidden;
 		object-fit: cover;
-		margin: 0;
+		margin: 20px;
 	}
 	.modal-buttons {
 		display: flex;
