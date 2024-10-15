@@ -91,7 +91,7 @@ const movies = JSON.parse(`[
 	},
 	{
 		"id": 7,
-		"day": 20241015,
+		"day": 20241028,
 		"movie": "EL EXORCISTA",
 		"title_win": "El Exorcista",
 		"title_win_mobile": "En 'El Exorcista', Regan es poseída por un demonio, y dos sacerdotes luchan por liberarla.",
@@ -130,7 +130,7 @@ const movies = JSON.parse(`[
 		"description_win": "La familia Graham enfrenta una serie de tragedias tras la muerte de la matriarca, revelando oscuros secretos familiares...",
 		"message_win": "🎉 ¡Qué suerte que no heredaste los oscuros secretos de la familia Graham! 🔥👻",
 		"message_win_mobile": "🎉 ¡Esquivaste el destino de los Graham! 👻",
-		"image_win": "./9.Hereditary-win.jpg",
+		"image_win": "./9.Hereditary-win.webp",
 		"message_lose": "¡Oh no! Te has convertido en parte de los secretos oscuros de la familia Graham... ¡intenta salir antes de que sea tarde! 🔥👻",
 		"image_lose": "ruta/a/image_perder_hereditary.png"
 	},
