@@ -16,9 +16,10 @@ const Text = (props) => {
 		ev.preventDefault();
 	};
 	return (
-		<section>
+		<section className='sectionText'>
+      <article className='sectionText_containerWrite'>
 			<form className='form' onSubmit={handleOnSumbit}>
-				<label className='title' htmlFor='last-letter'>
+				<label className='title1' htmlFor='last-letter'>
 					Escribe una letra:
 				</label>
 				<input
@@ -34,7 +35,8 @@ const Text = (props) => {
 					pattern='^[a-zA-ZáäéëíïóöúüÁÄÉËÍÏÓÖÚÜñÑ]?$'
 				/>
 			</form>
-			<section>
+      </article>
+			<article className='sectionText_containerLetters'>
 				<div className='error'>
 					<h2 className='title'>Letras falladas:</h2>
 					<ul className='letters'>{props.renderWrongLetters()}</ul>
@@ -43,7 +45,7 @@ const Text = (props) => {
 					<h2 className='title'>Solución:</h2>
 					<ul className='letters'>{props.renderSolutionLetters()}</ul>
 				</div>
-			</section>
+			</article>
 		</section>
 	);
 };

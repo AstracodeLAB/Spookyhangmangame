@@ -1,4 +1,21 @@
 // COMMON STYLES
+.title1 {
+  display: block;
+  font-family: "Creepster", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.20rem;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.3rem;
+  
+  width: 95%;
+  @media (min-width: 768px) {
+  font-size: 1.50rem;
+  }
+  
+  @media (min-width: 1024px) {}
+}
 
 .title {
   display: block;
@@ -37,9 +54,7 @@
 // MAIN
 
 .main {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
+
 
   @media (min-width: 768px) {
     display: flex;

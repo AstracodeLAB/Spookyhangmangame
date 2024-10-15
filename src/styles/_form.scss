@@ -1,8 +1,36 @@
+.sectionText {
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Añadimos posición relativa para que el z-index funcione */
+  z-index: 10; 
+  top: -105px; /* Mueve hacia arriba, ajusta el valor según sea necesario */
+  right: 0;
+  
+
+  &_containerWrite{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+   
+
+  }
+  &_containerLetters{
+    display: flex;
+  flex-direction: column;
+  
+  }
+}
+
 .form {
   // margin-bottom: 1rem;
   text-align: center;
 
+  
+
   &__input {
+    color: white;
     background-color: transparent;
     border: none;
     border-bottom: 3px solid rgb(116, 85, 85);
@@ -12,6 +40,7 @@
     animation-name: borderBottomInput;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    
 
     &[maxLength='1'] {
       width: 5rem;
