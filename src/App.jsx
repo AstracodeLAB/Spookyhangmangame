@@ -151,11 +151,13 @@ function App() {
 								) : null}
 								{gameOver && (
 									<div>
-										<div className='calabaza'>
-											<img
-												className='calabaza_gif'
-												src='https://i.pinimg.com/originals/88/8c/2a/888c2a5b2f0a7a22da8d82b56ca2828d.gif'
-											></img>
+										<div className='containerCalabaza'>
+											<div className='containerCalabaza_calabaza'>
+												<img
+													className='containerCalabaza_calabaza_gif'
+													src='https://i.pinimg.com/originals/88/8c/2a/888c2a5b2f0a7a22da8d82b56ca2828d.gif'
+												></img>
+											</div>
 										</div>
 										<p className='game-over'>Los fantasmas lo celebran... </p>
 										<p className='game-over'>¡todavía puedes derrotarlos! </p>
@@ -169,6 +171,7 @@ function App() {
 											<source src='evil-laugh1.mp3' type='audio/mp3' />
 											Tu navegador no soporta el elemento de audio.
 										</audio>
+										
 									</div>
 								)}
 								<Dummy wrongLetters={wrongLetters} />

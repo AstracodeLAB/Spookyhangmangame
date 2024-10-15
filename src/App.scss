@@ -21,12 +21,14 @@ body {
 }
 
 
+
 .game-over, 
 .game-over-retry {
   font-family: "Eater", sans-serif;
   font-weight: 400;
   font-style: normal;
   text-align: center;
+  text-shadow: 4px 4px 6px black;
 }
 
 .game-over-retry {
@@ -43,7 +45,7 @@ body {
   border: none;
   background-color: #FB3C2D;
   font-family: "Creepster", system-ui;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: black;
   cursor: pointer;
   border-radius: 5px;
