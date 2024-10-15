@@ -50,12 +50,11 @@
 .header__intro {
 	padding: 0 1rem;
 	text-align: center;
-	
 
 	@media (min-width: 768px) {
 		padding: 0;
 		margin-bottom: 2rem;
-		background-color: #ff7b003d;
+		// background-color: #ff7b003d;
 	}
 }
 
@@ -72,7 +71,6 @@
 	@media (min-width: 768px) {
 		display: inline-block;
 		width: 85%;
-		
 	}
 }
 
