@@ -1,7 +1,7 @@
 const movies = JSON.parse(`[
 	{
 		"id": 1,
-		"day": 20241015,
+		"day": 20241022,
 		"movie": "JENNIFERS BODY",
 		"title_win": "Jennifer's Body",
 		"title_win_mobile": "En 'Jennifer's Body', una animadora poseída por un demonio se alimenta de los chicos de su instituto.",
@@ -46,7 +46,7 @@ const movies = JSON.parse(`[
 	},
 	{
 		"id": 4,
-		"day": 2024104,
+		"day": 20241025,
 		"movie": "ALIEN",
 		"title_win": "Alien",
 		"title_win_mobile":"En 'Alien', la tripulación de la nave Nostromo lucha por sobrevivir contra un letal alienígena a bordo de su nave.",
@@ -61,7 +61,7 @@ const movies = JSON.parse(`[
 	},
 	{
 		"id": 5,
-		"day": 20241026,
+		"day": 20241015,
 		"movie": "JOVENES Y BRUJAS",
 		"title_win": "Jóvenes y brujas",
 		"title_win_mobile": "En 'Jóvenes y brujas', un grupo de adolescentes marginadas descubre el poder de la brujería y sus consecuencias.",
