@@ -1,50 +1,53 @@
 .footer {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    padding-top: 2rem; 
-    padding-bottom: 2rem; 
-   
-    &__content {
-      display: flex;
-      flex-direction: column; 
-      align-items: center; 
-      text-align: center; 
-    }
-  
-    &__text {
-      margin-bottom: 0.5rem;
-    }
-  
-    &__icons {
-      display: flex;
-      gap: 0.5rem;
-      justify-content: center; 
-    }
-  
-    &__icon {
-      width: 24px;
-      height: 24px;
-  
-      &--threads {
-        background-color: #ffffff;
-        border-radius: 50%;
-      }
-    }
-   
-    // Estilos para tablet y desktop
-    @media (min-width: 768px) {
-      flex-direction: row; 
-      justify-content: space-between;
-      align-items: center;
-      padding-top: 0.5rem;
-      padding-bottom: 1rem; 
-  
-      &__content {
-        flex-direction: column;
-        align-items: flex-end; 
-        text-align: right; 
-      }
-    }
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	&__text {
+		margin-bottom: 0.5rem;
+	}
+
+	&__icons {
+		display: flex;
+		gap: 0.5rem;
+		justify-content: center;
+	}
+
+	&__icon {
+		width: 24px;
+		height: 24px;
+
+		&--threads {
+			background-color: #ffffff;
+			border-radius: 50%;
+		}
+	}
+
+	// Estilos para tablet y desktop
+	@media (min-width: 768px) {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0.5rem 1rem;
+		// padding-bottom: 1rem;
+
+		&__content {
+			flex-direction: column;
+			align-items: flex-end;
+			text-align: right;
+		}
+	}
+
+  @media (min-width: 1024px){
+ 
   }
-  
+}
