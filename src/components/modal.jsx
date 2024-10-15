@@ -23,8 +23,8 @@ const Modal = ({ showModal, closeModal, todayMovie }) => {
 					</div>
 				</div>
 				<div className='message-box'>
-					{/* <img className='cat' src='cat-halloween.gif' alt='gato negro con calabaza' /> */}
-					
+					<img className='cat' src='cat-halloween.gif' alt='gato negro con calabaza' />
+					<div>
 						<p className='message-astra'>
 							Como recompensa, tienes un <span className='green'>10% de descuento</span> en nuestro servicio de
 							portfolio*.
@@ -35,7 +35,7 @@ const Modal = ({ showModal, closeModal, todayMovie }) => {
 						<p className='message-astra-advice'>
 							*Oferta válida hasta el 1 de noviembre de 2024 con el <span className='green'>código ASTRACODE</span>
 						</p>
-					
+					</div>
 				</div>
 
 				<div className='modal-buttons'>

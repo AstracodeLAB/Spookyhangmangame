@@ -55,11 +55,13 @@
 			justify-content: left;
 			align-items: center;
 		}
+
+    
 	}
 	.cat {
 		display: none;
 
-		@media (min-width: 768px) {
+		@media (min-width: 1024px) {
 			display: block;
 			width: 80px;
 			height: 82px;
@@ -83,6 +85,11 @@
 			font-weight: 500;
       font-size: large;
 		}
+
+    @media (min-width: 1024px){
+     margin: 0; 
+     font-size: x-large;
+    }
 	}
 
 	.message-box {
@@ -94,6 +101,10 @@
       margin-top: 15px;
       border-radius: 10px;
       font-size:1.2rem ;
+    }
+
+    @media (min-width: 1024px) {
+      display: flex;
     }
 	}
 
@@ -135,6 +146,11 @@
       width: 180px;
       height: 180px;
     }
+
+    @media (min-width: 1024px) {
+      width: 200px;
+      height: 200px;
+    }
 	}
 
 	.modal-buttons {
@@ -170,8 +186,11 @@
 		margin-top: 0;
 		margin-left: 10px;
 		font-size: 18px;
-		
 	}
+
+  @media (min-width: 1024px) {
+    margin: 30px 0;
+  }
 
 	
 }
@@ -193,6 +212,10 @@
   @media (min-width: 768px) {
     display: flex;
     margin-top: 0;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: x-large;
   }
 }
 
@@ -224,4 +247,8 @@
 		display: block;
     font-size: 1.2rem;
 	}
+
+  @media (min-width: 1024px) {
+    font-size: large;
+  }
 }
