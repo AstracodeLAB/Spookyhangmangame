@@ -8,6 +8,8 @@ const Dummy = ({wrongLetters}) => {
     // eslint-disable-next-line react/prop-types
     return wrongLetters.length
   }
+
+  
   return (
     <section className={`dummy error-${calculateErrorNumber()}`}>
       <span className="error-14 tongue"></span>
@@ -25,6 +27,7 @@ const Dummy = ({wrongLetters}) => {
       <span className="error-2 line"></span>
       <span className="error-1 line"></span>
     </section>
+
   );
 };
 

@@ -38,7 +38,7 @@
 
 .main {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: row-reverse;
   justify-content: center;
 
   @media (min-width: 768px) {
@@ -52,6 +52,8 @@
   }
   
 }
+
+
 
 .calabaza{
   margin-left:15%;
