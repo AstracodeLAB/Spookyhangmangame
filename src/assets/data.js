@@ -67,7 +67,7 @@
 	},
 	{
 		"id": 6,
-		"day": 20241027,
+		"day": 20241015,
 		"movie": "LA MUERTE OS SIENTA TAN BIEN",
 		"title_win": "La muerte os sienta tan bien",
 		"year_win": 1992,
