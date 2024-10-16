@@ -1,7 +1,7 @@
 const movies = JSON.parse(`[
 	{
 		"id": 1,
-		"day": 20241022,
+		"day": 20241016,
 		"movie": "JENNIFERS BODY",
 		"title_win": "Jennifer's Body",
 		"title_win_mobile": "En 'Jennifer's Body', una animadora poseída por un demonio se alimenta de los chicos de su instituto.",
