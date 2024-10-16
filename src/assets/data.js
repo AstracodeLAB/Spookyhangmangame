@@ -16,7 +16,7 @@ const movies = JSON.parse(`[
 	},
 	{
 		"id": 2,
-		"day": 20241014,
+		"day": 20241016,
 		"movie": "CARRIE",
 		"title_win": "Carrie",
 		"title_win_mobile": "En 'Carrie', una adolescente socialmente aislada desata su ira telequinética después de ser brutalmente acosada.",
@@ -91,7 +91,7 @@ const movies = JSON.parse(`[
 	},
 	{
 		"id": 7,
-		"day": 20241015,
+		"day": 20241028,
 		"movie": "EL EXORCISTA",
 		"title_win": "El Exorcista",
 		"title_win_mobile": "En 'El Exorcista', Regan es poseída por un demonio, y dos sacerdotes luchan por liberarla.",
@@ -121,7 +121,7 @@ const movies = JSON.parse(`[
 	},
 	{
 		"id": 9,
-		"day": 20241016,
+		"day": 20241030,
 		"movie": "HEREDITARY",
 		"title_win": "Hereditary",
 		"title_win_mobile": "En 'Hereditary', la familia Graham enfrenta tragedias que revelan oscuros secretos tras la muerte de la matriarca.",
