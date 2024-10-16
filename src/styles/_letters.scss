@@ -1,5 +1,9 @@
 .solution {
   transform: translateX(-20px);
+
+  @media (min-width: 768px) {
+    transform: translateX(-3px);
+  }
 }
 
 .error {

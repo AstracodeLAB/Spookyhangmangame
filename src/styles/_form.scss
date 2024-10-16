@@ -22,6 +22,10 @@
 		@media (min-width: 768px) {
 			height: 40%;
 		}
+
+    @media (min-width: 768px) {
+      transform: translateX(-28px);
+    }
 	}
 	&_containerLetters {
 		display: flex;
@@ -39,6 +43,10 @@
 	text-align: center;
 
   @media (min-width: 768px) {
+    transform: translateX(-80px);
+  }
+
+  @media (min-width: 1024px) {
     transform: translateX(-80px);
   }
 
