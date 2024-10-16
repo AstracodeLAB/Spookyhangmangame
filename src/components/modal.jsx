@@ -1,8 +1,9 @@
+import Bat from '../assets/bat.svg'; 
+
 // eslint-disable-next-line react/prop-types
 const Modal = ({ showModal, closeModal, todayMovie }) => {
-	if (!showModal) return null; // Si showModal es false, no muestra nada
-	//if (closeModal) return null; // Si showModal es false, no muestra nada
-	console.log('ESTOY EN LA MODAL', todayMovie);
+  if (!showModal) return null; // Si showModal es false, no muestra nada
+  //if (closeModal) return null; // Si showModal es false, no muestra nada
 
 	return (
 		<div className='modal-overlay'>
@@ -12,7 +13,9 @@ const Modal = ({ showModal, closeModal, todayMovie }) => {
 					<p className='message-win'>{todayMovie.message_win}</p>
 				</div>
 				<div className='movie-content'>
+					<img className="bat_l" src={Bat} alt="Murcielago" />
 					<img className='image-movie' src={todayMovie.image_win} alt='Placeholder' />
+					<img className="bat_r" src={Bat} alt="Murcielago" />
 					<div className='movie-description'>
 						<h2 className='movie-title-mobile'>{todayMovie.title_win_mobile}</h2>
 						<h2 className='movie-title'>
@@ -36,6 +39,10 @@ const Modal = ({ showModal, closeModal, todayMovie }) => {
 							*Oferta válida hasta el 1 de noviembre de 2024 con el <span className='green'>código ASTRACODE</span>
 						</p>
 					</div>
+					<audio autoPlay>
+						<source src="aleteo.mp3" type="audio/mp3" />
+						Tu navegador no soporta el elemento de audio.
+					</audio>
 				</div>
 
 				<div className='modal-buttons'>

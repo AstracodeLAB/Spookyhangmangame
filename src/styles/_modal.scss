@@ -103,6 +103,8 @@
 
 		@media (min-width: 1024px) {
 			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 
 		@media (min-width: 1440px) {
@@ -261,5 +263,115 @@
 
 	@media (min-width: 1024px) {
 		font-size: large;
+	}
+}
+.bat_l {
+	height: 5rem;
+	position: absolute;
+	bottom: 10%;
+	right: 0%;
+	animation: flight 3s forwards;
+}
+
+.bat_r {
+	height: 5rem;
+	position: absolute;
+	bottom: 10%;
+	transform: scaleX(-1);
+	right: 0%;
+	animation: flight_r 4s forwards;
+}
+
+@keyframes flight {
+	10% {
+		bottom: 20%;
+		right: 0%;
+	}
+
+	20% {
+		bottom: 20%;
+		right: 10%;
+	}
+
+	30% {
+		bottom: 30%;
+		right: 20%;
+	}
+
+	40% {
+		bottom: 40%;
+		right: 30%;
+	}
+
+	50% {
+		bottom: 30%;
+		right: 40%;
+	}
+
+	60% {
+		bottom: 40%;
+		right: 50%;
+	}
+
+	70% {
+		bottom: 50%;
+		right: 60%;
+	}
+
+	80% {
+		bottom: 40%;
+		right: 70%;
+	}
+
+	90% {
+		bottom: 50%;
+		right: 85%;
+	}
+
+	100% {
+		bottom: 40%;
+		right: 100%;
+	}
+}
+
+@keyframes flight_r {
+	10% {
+		bottom: 5%;
+		right: 0%;
+	}
+
+	20% {
+		bottom: 5%;
+		left: 10%;
+	}
+
+	30% {
+		bottom: 15%;
+		left: 20%;
+	}
+
+	40% {
+		bottom: 25%;
+		left: 30%;
+	}
+
+	50% {
+		bottom: 15%;
+		left: 40%;
+	}
+
+	60% {
+		bottom: 25%;
+		left: 50%;
+	}
+
+	70% {
+		bottom: 25%;
+		left: 60%;
+	}
+
+	100% {
+		bottom: 35%;
+		left: 100%;
 	}
 }

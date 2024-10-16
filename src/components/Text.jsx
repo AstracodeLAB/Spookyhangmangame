@@ -2,15 +2,22 @@ import { useState } from 'react';
 import { allowedCharsRegExp } from './alpha';
 
 const Text = (props) => {
-	const [char, setChar] = useState('');
+ 
+  const [char, setChar] = useState('')
+  
+  const handleInput = (ev) => {
+    console.log(ev.target.value)
+    // eslint-disable-next-line react/prop-types
+    if (!ev.target.value.match(allowedCharsRegExp)) return
+    //si ha pasado menos de un segundo no hagas nada
+    setChar(ev.target.value.toUpperCase())
 
-	const handleInput = (ev) => {
-		// eslint-disable-next-line react/prop-types
-		if (!ev.key.match(allowedCharsRegExp)) return;
-		//si ha pasado menos de un segundo no hagas nada
-		setChar(ev.key.toUpperCase());
-		props.handleLastLetter(ev.key.toUpperCase());
-	};
+    props.handleLastLetter(ev.target.value.toUpperCase());
+  };
+  setTimeout(() => {
+    setChar(''); 
+  }, 300); 
+
 
 	const handleOnSumbit = (ev) => {
 		ev.preventDefault();
@@ -25,7 +32,7 @@ const Text = (props) => {
 				<input
 					onChange={() => {}}
 					value={char}
-					onKeyUp={handleInput}
+					onInput={handleInput}
 					autoComplete='off'
 					className='form__input'
 					maxLength='1'
