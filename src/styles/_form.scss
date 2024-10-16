@@ -1,77 +1,85 @@
 .sectionText {
-  display: flex;
-  flex-direction: column;
-  position: relative; /* Añadimos posición relativa para que el z-index funcione */
-  z-index: 10; 
-  top: -150px; /* Mueve hacia arriba, ajusta el valor según sea necesario */
-  right: -20px;
-  width: 90%;
+	display: flex;
+	flex-direction: column;
+	position: relative; /* Añadimos posición relativa para que el z-index funcione */
+	z-index: 10;
+	top: -150px; /* Mueve hacia arriba, ajusta el valor según sea necesario */
+	right: -20px;
+	width: 90%;
 
-  @media (min-width: 768px) {
-    top: 50px;
-    right: 80px;
-  }
-  
+	@media (min-width: 768px) {
+		top: 50px;
+		right: 80px;
+	}
 
-  &_containerWrite{
-    height: 50%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-   
+	&_containerWrite {
+		height: 50%;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
 
-  }
-  &_containerLetters{
-    display: flex;
-  flex-direction: column;
-  
-  }
+		@media (min-width: 768px) {
+			height: 40%;
+		}
+	}
+	&_containerLetters {
+		display: flex;
+		flex-direction: column;
+
+    @media (min-width: 768px) {
+      align-items: center;
+      transform: translateX(60px);
+    }
+	}
 }
 
 .form {
-  // margin-bottom: 1rem;
-  text-align: center;
+	// margin-bottom: 1rem;
+	text-align: center;
 
-  
+  @media (min-width: 768px) {
+    transform: translateX(-80px);
+  }
 
-  &__input {
-    color: white;
-    background-color: transparent;
-    border: none;
-    border-bottom: 3px solid rgb(116, 85, 85);
-    text-align: center;
-    font-size: 4rem;
-    outline: none;
-    animation-name: borderBottomInput;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+	&__input {
+		color: white;
+		background-color: transparent;
+		border: none;
+		border-bottom: 3px solid rgb(116, 85, 85);
+		text-align: center;
+		font-size: 4rem;
+		outline: none;
+		animation-name: borderBottomInput;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+
     
 
-    &[maxLength='1'] {
-      width: 5rem;
-    }
+		&[maxLength='1'] {
+			width: 5rem;
+		}
 
-    &[maxLength='15'] {
-      width: 25rem;
-    }
+		&[maxLength='15'] {
+			width: 25rem;
+		}
 
-    &::selection {
-      background-color: rgba(255, 255, 255, 0.204);
-    }
-  }
+		&::selection {
+			background-color: rgba(255, 255, 255, 0.204);
+		}
+	}
 }
 
 @keyframes borderBottomInput {
-  from {
-    border-bottom-color: white;
-  }
+	from {
+		border-bottom-color: white;
+	}
 
-  50% {
-    border-bottom-color: transparent;
-  }
+	50% {
+		border-bottom-color: transparent;
+	}
 
-  to {
-    border-bottom-color: white;
-  }
+	to {
+		border-bottom-color: white;
+	}
 }

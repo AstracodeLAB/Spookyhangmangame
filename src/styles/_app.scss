@@ -1,147 +1,141 @@
 // COMMON STYLES
 .title1 {
-  display: block;
-  font-family: "Creepster", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.20rem;
-  line-height: 1;
-  text-align: center;
-  letter-spacing: 0.3rem;
-  
-  width: 95%;
-  @media (min-width: 768px) {
-  font-size: 1.50rem;
-  }
-  
-  @media (min-width: 1024px) {}
+	display: block;
+	font-family: 'Creepster', system-ui;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.2rem;
+	line-height: 1;
+	text-align: center;
+	letter-spacing: 0.3rem;
+
+	width: 95%;
+	@media (min-width: 768px) {
+		font-size: 1.5rem;
+	}
+
+	@media (min-width: 1024px) {
+	}
 }
 
 .title {
-  
-  display: block;
-  font-family: "Creepster", system-ui;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.20rem;
-  line-height: 1;
-  text-align: center;
-  letter-spacing: 0.3rem;
-  @media (min-width: 768px) {
-  font-size: 1.50rem;
-  }
-  
-  @media (min-width: 1024px) {}
+	display: block;
+	font-family: 'Creepster', system-ui;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.2rem;
+	line-height: 1;
+	text-align: center;
+	letter-spacing: 0.3rem;
+
+	@media (min-width: 768px) {
+		font-size: 1.5rem;
+		transform: translateX(10px);
+	}
+
+	@media (min-width: 1024px) {
+	}
 }
 
 .title2 {
-  margin-top: 50px;
-  margin-bottom: 0;
+	margin-top: 50px;
+	margin-bottom: 0;
 
-  @media (min-width: 768px) {
-    margin-top: 0;
-    width: 223px;
-  }
+	@media (min-width: 768px) {
+		margin-top: 0;
+		width: 223px;
+	}
 }
 
 .title3 {
-  margin: 0;
+	margin: 0;
 }
 
 // PAGE
 
 .page {
+	// width: 100%;
+	background-color: #000000aa;
+	// min-height: 100vh;
+	// background-image: url('../../images/blackboard.jpg');
+	// background-size: cover;
+	// background-position: center center;
 
-  // width: 100%;
-  background-color: #000000aa;
-  // min-height: 100vh;
-  // background-image: url('../../images/blackboard.jpg');
-  // background-size: cover;
-  // background-position: center center;
+	@media (min-width: 768px) {
+		// padding: 0.5rem 2rem;
+	}
 
-    @media (min-width: 768px) {
-        // padding: 0.5rem 2rem;
-      }
-    
-      @media (min-width: 1024px) {}
+	@media (min-width: 1024px) {
+	}
 }
 
 // MAIN
 
 .main {
-  height: 415px;
+	height: 415px;
 
-  @media (min-width: 768px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  
-  @media (min-width: 1024px) {
-    
-  }
+	@media (min-width: 768px) {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
 
+	@media (min-width: 1024px) {
+	}
 }
-.spamTryAgain{
-  position: relative;
-  z-index: 10;
-  top: -180px;
-  @media (min-width: 768px) {
-    top: 0px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-  }
-  @media (min-width: 1024px) {
-    gap: 50px;
+.spamTryAgain {
+	position: relative;
+	z-index: 10;
+	top: -180px;
+	@media (min-width: 768px) {
+		top: 0px;
+		display: flex;
+		flex-direction: row;
+		gap: 10px;
+	}
+	@media (min-width: 1024px) {
+		gap: 50px;
+	}
 }
+.containerCalabaza {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	@media (min-width: 768px) {
+		flex-direction: column;
+	}
+
+	&__calabaza {
+		margin-left: 30%;
+		width: 130px;
+		height: 130px;
+		border-radius: 50%;
+		overflow: hidden;
+		background-color: rgb(0, 0, 0);
+		box-shadow: 5px 5px 10px black;
+		@media (min-width: 768px) {
+			width: 240px;
+			height: 240px;
+			margin-left: 0px;
+		}
+		@media (min-width: 1024px) {
+			width: 300px;
+			height: 300px;
+			margin-left: 0px;
+		}
+
+		&__gif {
+			margin-left: -50px;
+			margin-top: -30px;
+
+			@media (min-width: 768px) {
+				margin-left: -115px;
+				margin-top: -20px;
+			}
+			@media (min-width: 1024px) {
+				margin-left: -85px;
+				margin-top: -0px;
+			}
+		}
+	}
 }
- .containerCalabaza {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  @media (min-width: 768px) {
-    flex-direction: column;
-  }
-  
-  
-  &__calabaza {
-    margin-left:30%;
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: rgb(0, 0, 0);
-  box-shadow: 5px 5px 10px black;
-   @media (min-width: 768px) {
-    width: 240px;
-    height: 240px;
-    margin-left: 0px;
-  }
-    @media (min-width: 1024px) {
-      width: 300px;
-      height: 300px;
-      margin-left: 0px;
-  }
-
-  &__gif {
-    margin-left:-50px;
-    margin-top: -30px;
-    
-    @media (min-width: 768px) {
-      margin-left:-115px;
-      margin-top: -20px;
-    }
-    @media (min-width: 1024px) {
-      margin-left:-85px;
-      margin-top: -0px;
-  }
-  }
-  }
-
- }
-
-
-
-
-    
