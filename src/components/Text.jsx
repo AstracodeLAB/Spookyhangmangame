@@ -48,7 +48,7 @@ const Text = (props) => {
 				</div>
 				<div className='solution'>
 					<h2 className='title title3'>Solución:</h2>
-					<ul className='letters'>{props.renderSolutionLetters()}</ul>
+					<div className='letters letters-win'>{props.renderSolutionLetters()}</div>
 				</div>
 			</article>
 		</section>

@@ -58,22 +58,40 @@ function App() {
 
 	//Mostrar las letras correctas
 	const renderSolutionLetters = () => {
-		const wordLetters = keyword.split('');
-		//quitar guión cuando es espacio e ignorar la letra ok.
-		return wordLetters.map((letter, index) => {
-			if (letter === ' ') {
-				return <li key={index} className='noLetter'></li>;
-			}
-			if (letter !== ' ' && correctLetters.includes(letter)) {
-				return (
-					<li key={index} className='letter'>
-						{letter}
-					</li>
-				);
-			} else {
-				return <li key={index} className='letter'></li>;
-			}
-		});
+		const words = keyword.split(' ')
+
+		return words.map((word, wordIdx)=>{
+			const letters = word.split('')
+			return (
+				<div className="word" key={wordIdx}>
+				{letters.map((letter, letterIdx)=>{
+					return (<li key={letterIdx} className='letter'>
+						{correctLetters.includes(letter) && letter}
+					</li>)
+				})}
+
+				</div>
+			)
+		})
+
+		// const wordLetters = keyword.split('');
+		// //quitar guión cuando es espacio e ignorar la letra ok.
+		// return wordLetters.map((letter, index) => {
+		// 	if (letter === ' ') {
+		// 		return <li key={index} className='noLetter'></li>;
+		// 	}
+		// 	if (letter !== ' ' && correctLetters.includes(letter)) {
+		// 		return (
+		// 			<li key={index} className='letter'>
+		// 				{letter}
+		// 			</li>
+		// 		);
+		// 	} else {
+		// 		return (<>
+		// 			<li key={index} className='letter'></li>
+		// 		</>);
+		// 	}
+		// });
 	};
 
 	//Mostrar las letras erróneas

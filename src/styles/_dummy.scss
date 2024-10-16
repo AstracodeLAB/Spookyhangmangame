@@ -10,6 +10,18 @@ $dummyTransitionTime: 1s;
   width: 40%;
   z-index: 5;
 
+  @media (min-width: 768px) {
+    // margin-left: 0;
+  }
+
+  @media (min-width: 1024px) {
+    margin-left: 150px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-left: 250px;
+  }
+
   .line {
     position: absolute;
     display: block;
