@@ -5,6 +5,12 @@
   z-index: 10; 
   top: -150px; /* Mueve hacia arriba, ajusta el valor según sea necesario */
   right: -20px;
+  width: 90%;
+
+  @media (min-width: 768px) {
+    top: 50px;
+    right: 80px;
+  }
   
 
   &_containerWrite{

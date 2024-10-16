@@ -2,6 +2,14 @@
   transform: translateX(-20px);
 }
 
+.error {
+
+  @media (min-width: 768px) {
+    transform: translate(90px);
+    width: 200px;
+  }
+}
+
 .letters {
   margin-top: 0;
   padding: 0;
@@ -28,4 +36,8 @@
 
 .letters-lose {
   width: 5px;
+}
+
+.letters-win {
+  font-size: 0.2rem;
 }
