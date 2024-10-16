@@ -8,8 +8,8 @@
 	line-height: 1;
 	text-align: center;
 	letter-spacing: 0.3rem;
-
 	width: 95%;
+
 	@media (min-width: 768px) {
 		font-size: 1.5rem;
 	}
@@ -56,7 +56,7 @@
 .page {
 	// width: 100%;
 	background-color: #000000aa;
-	// min-height: 100vh;
+	min-height: 100vh;
 	// background-image: url('../../images/blackboard.jpg');
 	// background-size: cover;
 	// background-position: center center;
@@ -144,4 +144,7 @@
 			}
 		}
 	}
+}
+.word {
+	display: flex;
 }
