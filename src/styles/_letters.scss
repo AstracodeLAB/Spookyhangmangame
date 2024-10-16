@@ -1,9 +1,10 @@
-.solution,
-.error {
-  //margin-bottom: 3.75rem;
+.solution {
+  transform: translateX(-20px);
 }
 
 .letters {
+  margin-top: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -23,4 +24,8 @@
     font-size: 2rem;
     text-align: center;
   }
+}
+
+.letters-lose {
+  width: 5px;
 }
