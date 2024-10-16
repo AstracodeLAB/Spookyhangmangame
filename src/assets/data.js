@@ -121,7 +121,7 @@ const movies = JSON.parse(`[
 	},
 	{
 		"id": 9,
-		"day": 20241030,
+		"day": 20241016,
 		"movie": "HEREDITARY",
 		"title_win": "Hereditary",
 		"title_win_mobile": "En 'Hereditary', la familia Graham enfrenta tragedias que revelan oscuros secretos tras la muerte de la matriarca.",
