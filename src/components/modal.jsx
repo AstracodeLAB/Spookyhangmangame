@@ -24,7 +24,7 @@ const Modal = ({ showModal, closeModal, todayMovie }) => {
 				</div>
 				<div className='message-box'>
 					<img className='cat' src='cat-halloween.gif' alt='gato negro con calabaza' />
-					<div>
+					<div className="message-box-content">
 						<p className='message-astra'>
 							Como recompensa, tienes un <span className='green'>10% de descuento</span> en nuestro servicio de
 							portfolio*.
