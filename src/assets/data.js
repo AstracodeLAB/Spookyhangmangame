@@ -16,7 +16,7 @@ const movies = JSON.parse(`[
 	},
 	{
 		"id": 2,
-		"day": 20241016,
+		"day": 20241023,
 		"movie": "CARRIE",
 		"title_win": "Carrie",
 		"title_win_mobile": "En 'Carrie', una adolescente socialmente aislada desata su ira telequinética después de ser brutalmente acosada.",
@@ -31,7 +31,7 @@ const movies = JSON.parse(`[
 	},
 	{
 		"id": 3,
-		"day": 20241024,
+		"day": 20241016,
 		"movie": "EL SILENCIO DE LOS CORDEROS",
 		"title_win": "El silencio de los corderos",
 		"title_win_mobile": "En 'El silencio de los corderos', una joven agente del FBI colabora con Hannibal Lecter para atrapar a un asesino.",

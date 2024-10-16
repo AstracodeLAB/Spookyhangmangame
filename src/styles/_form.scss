@@ -3,8 +3,8 @@
   flex-direction: column;
   position: relative; /* Añadimos posición relativa para que el z-index funcione */
   z-index: 10; 
-  top: -105px; /* Mueve hacia arriba, ajusta el valor según sea necesario */
-  right: 0;
+  top: -150px; /* Mueve hacia arriba, ajusta el valor según sea necesario */
+  right: -20px;
   
 
   &_containerWrite{
