@@ -91,7 +91,7 @@ const movies = JSON.parse(`[
 	},
 	{
 		"id": 7,
-		"day": 20241028,
+		"day": 20241015,
 		"movie": "EL EXORCISTA",
 		"title_win": "El Exorcista",
 		"title_win_mobile": "En 'El Exorcista', Regan es poseída por un demonio, y dos sacerdotes luchan por liberarla.",
