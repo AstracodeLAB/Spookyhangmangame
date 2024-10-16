@@ -32,7 +32,7 @@ const Text = (props) => {
 				<input
 					onChange={() => {}}
 					value={char}
-					onKeyUp={handleInput}
+					onInput={handleInput}
 					autoComplete='off'
 					className='form__input'
 					maxLength='1'
