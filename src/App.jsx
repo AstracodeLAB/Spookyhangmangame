@@ -10,6 +10,8 @@ import Modal from '@components/Modal';
 import movies from './assets/data';
 import './App.scss';
 import { allowedCharsRegExp } from './components/alpha';
+import GifDesktop from './assets/calabazaGif.gif';
+import GifMob from './assets/calabazaGifMob.gif';
 
 function App() {
 	const [keyword, setKeyword] = useState('');
@@ -151,23 +153,34 @@ function App() {
 									/>
 								) : null}
 								{gameOver && (
-									<div>
+									<div className='spamTryAgain'>
 										<div className='containerCalabaza'>
-											<div className='containerCalabaza_calabaza'>
+											<div className='containerCalabaza__calabaza'>
+											<picture>
+												<source media="(min-width: 1024px)" srcSet={GifDesktop} />
+												<source media="(min-width: 768px)" srcSet={GifDesktop} />
 												<img
-													className='containerCalabaza_calabaza_gif'
-													src='https://i.pinimg.com/originals/88/8c/2a/888c2a5b2f0a7a22da8d82b56ca2828d.gif'
-												></img>
+												className='containerCalabaza__calabaza__gif'
+												src={GifMob}
+												alt="Calabaza"
+												/>
+											</picture>
 											</div>
 										</div>
-										<p className='game-over'>Los fantasmas lo celebran... </p>
-										<p className='game-over'>¡todavía puedes derrotarlos! </p>
-										<p className='game-over-retry'>¿Te atreves a intentarlo de nuevo?</p>
-										<div className='game-over-cont'>
+										<div className='containerGameOver'>
+											<p className='containerGameOver__game-over'>Los fantasmas lo celebran... </p>
+											<p className='containerGameOver__game-over'>¡todavía puedes derrotarlos! </p>
+											<p className='containerGameOver__game-over-retry'>¿Te atreves a intentarlo de nuevo?</p>
+											<div className='game-over-cont'>
 											<button className='game-over-button' onClick={retry}>
 												Volver a intentarlo
 											</button>
+											<button className='game-over-button-contact' onClick={retry}>
+												¿Quieres una web?
+											</button>
 										</div>
+										</div>
+										
 										<audio autoPlay>
 											<source src='evil-laugh1.mp3' type='audio/mp3' />
 											Tu navegador no soporta el elemento de audio.

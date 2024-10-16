@@ -270,7 +270,16 @@ $dummyTransitionTime: 1s;
       .error-#{$s}.line {
         background-color: $dummyEnabledColor;
       }
-
+      .error-#{$s}.head {
+        border-color: $dummyEnabledColor;
+      }
+      .error-#{$s}.eye {
+        color: $dummyEnabledColor;
+      }
+      .error-#{$s}.tongue {
+        color: $dummyEnabledColor;
+        display:block;
+      }
     }
   }
 }

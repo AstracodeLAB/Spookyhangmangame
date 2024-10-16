@@ -65,31 +65,65 @@
   @media (min-width: 1024px) {
     
   }
-  
+
+}
+.spamTryAgain{
+  position: relative;
+  z-index: 10;
+  top: -180px;
+  @media (min-width: 768px) {
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  @media (min-width: 1024px) {
+    gap: 50px;
+}
 }
  .containerCalabaza {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
-  &_calabaza {
-    width: 240px;
-
+  @media (min-width: 768px) {
+    flex-direction: column;
   }
-
-.calabaza{
-  margin-left:15%;
-  width: 240px;
-  height: 240px;
+  
+  
+  &__calabaza {
+    margin-left:30%;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   overflow: hidden;
   background-color: rgb(0, 0, 0);
   box-shadow: 5px 5px 10px black;
-  &_gif {
-    margin-left:-110px;
-    margin-top: -50px;
+   @media (min-width: 768px) {
+    width: 240px;
+    height: 240px;
+    margin-left: 0px;
+  }
+    @media (min-width: 1024px) {
+      width: 300px;
+      height: 300px;
+      margin-left: 0px;
+  }
+
+  &__gif {
+    margin-left:-50px;
+    margin-top: -30px;
+    
+    @media (min-width: 768px) {
+      margin-left:-115px;
+      margin-top: -20px;
+    }
+    @media (min-width: 1024px) {
+      margin-left:-85px;
+      margin-top: -0px;
   }
   }
+  }
+
  }
 
 
