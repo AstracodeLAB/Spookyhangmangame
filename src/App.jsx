@@ -131,6 +131,7 @@ function App() {
 						path='/'
 						element={
 							<main className='main'>
+								<Dummy wrongLetters={wrongLetters} />
 								{!gameOver && !isWinner && (
 									<Text
 										renderSolutionLetters={renderSolutionLetters}
@@ -174,7 +175,7 @@ function App() {
 										
 									</div>
 								)}
-								<Dummy wrongLetters={wrongLetters} />
+								
 							</main>
 						}
 					/>

@@ -1,9 +1,25 @@
 // COMMON STYLES
+.title1 {
+  display: block;
+  font-family: "Creepster", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.20rem;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.3rem;
+  
+  width: 95%;
+  @media (min-width: 768px) {
+  font-size: 1.50rem;
+  }
+  
+  @media (min-width: 1024px) {}
+}
 
 .title {
   display: block;
   font-family: "Creepster", system-ui;
-  text-shadow: 4px 4px 6px black;
   font-weight: 400;
   font-style: normal;
   font-size: 1.20rem;
@@ -38,9 +54,7 @@
 // MAIN
 
 .main {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
+
 
   @media (min-width: 768px) {
     display: flex;
@@ -60,6 +74,12 @@
   
   &_calabaza {
     width: 240px;
+
+  }
+
+.calabaza{
+  margin-left:15%;
+  width: 240px;
   height: 240px;
   border-radius: 50%;
   overflow: hidden;
