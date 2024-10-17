@@ -14,7 +14,6 @@ import GifDesktop from './assets/calabazaGif.gif';
 import GifMob from './assets/calabazaGifMob.gif';
 import { AudioContext } from './components/AudioContext';
 
-
 function App() {
 	const [keyword, setKeyword] = useState('');
 	const [todayMovie, setTodayMovie] = useState([]);
@@ -22,9 +21,9 @@ function App() {
 	const [correctLetters, setCorrectLetters] = useState([]);
 	const [isWinner, setIsWinner] = useState(false);
 	const [showModal, setShowModal] = useState(false);
-	const { isPlaying } = useContext(AudioContext)
+	const { isPlaying } = useContext(AudioContext);
 
-	console.log(isPlaying)
+	console.log(isPlaying);
 
 	//Aqui pondremos un objeto: cada día el nombre de una peli
 	useEffect(() => {
@@ -32,7 +31,6 @@ function App() {
 		console.log(spookyMovie.movie);
 		setKeyword(spookyMovie.movie);
 		setTodayMovie(spookyMovie);
-
 	}, []);
 
 	const processGameStatus = () => {
@@ -58,21 +56,22 @@ function App() {
 
 	//Mostrar las letras correctas
 	const renderSolutionLetters = () => {
-		const words = keyword.split(' ')
+		const words = keyword.split(' ');
 
-		return words.map((word, wordIdx)=>{
-			const letters = word.split('')
+		return words.map((word, wordIdx) => {
+			const letters = word.split('');
 			return (
-				<div className="word" key={wordIdx}>
-				{letters.map((letter, letterIdx)=>{
-					return (<li key={letterIdx} className='letter'>
-						{correctLetters.includes(letter) && letter}
-					</li>)
-				})}
-
+				<div className='word' key={wordIdx}>
+					{letters.map((letter, letterIdx) => {
+						return (
+							<li key={letterIdx} className='letter'>
+								{correctLetters.includes(letter) && letter}
+							</li>
+						);
+					})}
 				</div>
-			)
-		})
+			);
+		});
 
 		// const wordLetters = keyword.split('');
 		// //quitar guión cuando es espacio e ignorar la letra ok.
@@ -147,11 +146,8 @@ function App() {
 	const gameOver = processGameStatus();
 
 	return (
-
 		<div className='page'>
-			<Header 
-			text='Spooky Hangman Game'
-			/>
+			<Header text='Spooky Hangman Game' />
 			<BrowserRouter>
 				<Routes>
 					<Route path='/instructions' element={<Instructions />} />
@@ -183,15 +179,11 @@ function App() {
 									<div className='spamTryAgain'>
 										<div className='containerCalabaza'>
 											<div className='containerCalabaza__calabaza'>
-											<picture>
-												<source media="(min-width: 1024px)" srcSet={GifDesktop} />
-												<source media="(min-width: 768px)" srcSet={GifDesktop} />
-												<img
-												className='containerCalabaza__calabaza__gif'
-												src={GifMob}
-												alt="Calabaza"
-												/>
-											</picture>
+												<picture>
+													<source media='(min-width: 1024px)' srcSet={GifDesktop} />
+													<source media='(min-width: 768px)' srcSet={GifDesktop} />
+													<img className='containerCalabaza__calabaza__gif' src={GifMob} alt='Calabaza' />
+												</picture>
 											</div>
 										</div>
 										<div className='containerGameOver'>
@@ -199,19 +191,28 @@ function App() {
 											<p className='containerGameOver__game-over'>¡todavía puedes derrotarlos! </p>
 											<p className='containerGameOver__game-over-retry'>¿Te atreves a intentarlo de nuevo?</p>
 											<div className='game-over-cont'>
-											<button className='game-over-button' onClick={retry}>
-												Volver a intentarlo
-											</button>
-											<button className='game-over-button-contact' onClick={retry}>
-												¿Quieres una web?
-											</button>
+												<button className='game-over-button' onClick={retry}>
+													Volver a intentarlo
+												</button>
+												<button
+													className='game-over-button-contact'
+													onClick={() =>
+														window.open(
+															'https://docs.google.com/forms/d/e/1FAIpQLSdj6jwZ5bnhqcTR_fWHebJObl8caKhlROcOrgBdnPCpXz8fAA/viewform',
+															'_blank'
+														)
+													}
+												>
+													¿Quieres una web?
+												</button>
+											</div>
 										</div>
-										</div>
-										{isPlaying && <audio autoPlay>
-											<source src='evil-laugh1.mp3' type='audio/mp3' />
-											Tu navegador no soporta el elemento de audio.
-										</audio>
-										}
+										{isPlaying && (
+											<audio autoPlay>
+												<source src='evil-laugh1.mp3' type='audio/mp3' />
+												Tu navegador no soporta el elemento de audio.
+											</audio>
+										)}
 									</div>
 								)}
 							</main>
@@ -220,13 +221,13 @@ function App() {
 				</Routes>
 			</BrowserRouter>
 			<Footer />
-			{isPlaying && <audio autoPlay loop>
-				<source src='creepy-party.mp3' type='audio/mp3' />
-				Tu navegador no soporta el elemento de audio.
-			</audio>
-			}
+			{isPlaying && (
+				<audio autoPlay loop>
+					<source src='creepy-party.mp3' type='audio/mp3' />
+					Tu navegador no soporta el elemento de audio.
+				</audio>
+			)}
 		</div>
-	
 	);
 }
 
