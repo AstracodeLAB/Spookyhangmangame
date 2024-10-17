@@ -4,6 +4,7 @@
 	align-items: center;
 	padding-top: 3rem;
 	
+	
 
 	&__content {
 		display: flex;
@@ -15,6 +16,14 @@
 	&__text {
 		margin-top: 0;
 		margin-bottom: 0.5rem;
+		cursor: pointer;
+		color: #FB3C2D;
+		
+	}
+	&_link {
+		text-decoration: none;
+		cursor: pointer;
+
 	}
 
 	&__icons {

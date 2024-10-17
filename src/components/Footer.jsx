@@ -9,7 +9,7 @@ const Footer = () => {
 		<footer className='footer'>
 			<small className='footer__copy'>©Astracodelab</small>
 			<div className='footer_content'>
-				<a href="https://astracodelab.com/" target="_blank"><p className='footer__text'>¿Necesitas una web? Contáctanos!</p></a>
+				<a className="footer_link" href="https://astracodelab.com/" target="_blank"><p className='footer__text'>¿Necesitas una web? Contáctanos!</p></a>
 				<div className='footer__icons'>
 					<a href='https://www.facebook.com/people/Astracodelab/61564205213789/?_rdr' target='_blank' rel='noopener noreferrer'>
 						<img className='footer__icon' src={facebookLogo} alt='Logo de Facebook' />
