@@ -23,12 +23,11 @@ function App() {
 	const [showModal, setShowModal] = useState(false);
 	const { isPlaying } = useContext(AudioContext);
 
-	console.log(isPlaying);
+
 
 	//Aqui pondremos un objeto: cada día el nombre de una peli
 	useEffect(() => {
 		const spookyMovie = getMovie();
-		console.log(spookyMovie.movie);
 		setKeyword(spookyMovie.movie);
 		setTodayMovie(spookyMovie);
 	}, []);
@@ -42,8 +41,6 @@ function App() {
 		const movie = keyword.split('').filter((letter) => letter !== ' ');
 		const movieLetters = [...new Set(movie)];
 		const correctLettersNoRepeat = [...new Set(correctLetters)];
-		console.log('movieLetters', movieLetters);
-		console.log('correctLetters', correctLettersNoRepeat);
 		if (movieLetters.length === correctLettersNoRepeat.length) {
 			const result = movie.every((el) => correctLettersNoRepeat.includes(el));
 			if (result) {
@@ -119,13 +116,11 @@ function App() {
 
 	const getMovie = () => {
 		if (!movies || !Array.isArray(movies)) {
-			console.error('movies no es un array válido.');
 			return null;
 		}
 		const date = new Date();
 		const today = `${date.getFullYear()}${date.getMonth() + 1}${date.getDate()}`;
 		const todayMovie = movies.find((movie) => movie.day.toString() === today);
-		// console.error("movies dentro de getmovie", todayMovie)
 		return todayMovie;
 	};
 

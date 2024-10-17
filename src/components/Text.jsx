@@ -5,7 +5,6 @@ const Text = (props) => {
 	const [char, setChar] = useState('');
 
 	const handleInput = (ev) => {
-		console.log(ev.target.value);
 		// eslint-disable-next-line react/prop-types
 		if (!ev.target.value.match(allowedCharsRegExp)) return;
 		//si ha pasado menos de un segundo no hagas nada

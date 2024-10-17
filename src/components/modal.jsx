@@ -8,7 +8,7 @@ const Modal = ({ showModal, closeModal, todayMovie }) => {
   const { isPlaying } = useContext(AudioContext)
 
   if (!showModal) return null; // Si showModal es false, no muestra nada
-  //if (closeModal) return null; // Si showModal es false, no muestra nada
+
 
 
   return (
@@ -51,8 +51,6 @@ const Modal = ({ showModal, closeModal, todayMovie }) => {
           </audio>
           }
         </div>
-
-
         <div className='modal-buttons'>
           <button onClick={closeModal}>Cerrar</button>
         </div>
