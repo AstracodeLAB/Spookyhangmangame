@@ -176,7 +176,7 @@ function App() {
 											<div className='containerCalabaza__calabaza'>
 												<picture>
 													<source media='(min-width: 1024px)' srcSet={GifDesktop} />
-													<source media='(min-width: 768px)' srcSet={GifDesktop} />
+													<source media='(min-width: 768px)' srcSet={GifMob} />
 													<img className='containerCalabaza__calabaza__gif' src={GifMob} alt='Calabaza' />
 												</picture>
 											</div>
