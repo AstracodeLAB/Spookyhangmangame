@@ -8,7 +8,7 @@ const Header = (props) => {
   return (
     
     <header className="header">
-      <img className="logo" src="./Whitelogolab.png"></img>
+      <a href="https://astracodelab.com/" target="_blank"><img className="logo" src="./Whitelogolab.png"></img></a>
       <h1 className="header__title">{props.text}</h1>
       <div className='header__intro'>
 				<p className='header__paragraph header__paragraph--1'>
