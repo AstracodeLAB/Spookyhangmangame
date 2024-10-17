@@ -19,7 +19,7 @@ const Header = (props) => {
 				</p>
       
 				<p className='header__paragraph header__paragraph--2'>Cada día una nueva peli y una sorpresa especial si la adivinas...</p>
-        <p className='header__paragraph header__paragraph--3'>¡Juega al ahorcado descubriendo cada día una nueva peli de miedo y gana una sorpresa! Activa el audio para disfrutar mejor de la experiencia. 
+        <p className='header__paragraph header__paragraph--3'>¡Juega al ahorcado y descubre una nueva peli de miedo cada día! Activa el audio para una mejor experiencia. 
           <button
             onClick={toggleAudio}>{isPlaying ? ('🔊') : ('🔇')}
           </button> 
