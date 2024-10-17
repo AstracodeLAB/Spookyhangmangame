@@ -2,9 +2,11 @@
   background-color: rgba(12, 11, 11, 0.888);
   padding-bottom: 20px;
   border-radius: 15px;
+ 
 
   @media (min-width: 768px) {
     transform: translateX(-3px);
+    max-width: 50vw;
   }
 }
 
@@ -31,6 +33,9 @@
     font-size: 1rem;
     border-bottom: 3px solid white;
     text-align: center;
+    @media (min-width: 768px) {
+      font-size: 2rem;
+    }
   }
   .noLetter {
     margin: 0 0.25rem;
