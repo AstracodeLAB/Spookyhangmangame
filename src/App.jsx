@@ -3,7 +3,7 @@ import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import { allowedCharsRegExp } from './components/alpha';
 import { AudioContext } from './components/AudioContext';
 import Header from '@components/Header';
-import Modal from '.components/Modal';
+import Modal from './components/modal'
 import Text from '@components/Text';
 import Dummy from '@components/Dummy';
 import Footer from '@components/Footer';
