@@ -12,10 +12,12 @@ $dummyTransitionTime: 1s;
 
   @media (min-width: 768px) {
     // margin-left: 0;
+    width: 0;
   }
 
   @media (min-width: 1024px) {
-    margin-left: 150px;
+   // margin-left: 150px;
+   
   }
 
   @media (min-width: 1440px) {

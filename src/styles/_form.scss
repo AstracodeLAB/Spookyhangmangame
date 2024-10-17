@@ -1,5 +1,5 @@
 .sectionText {
-	display: flex;
+	//display: flex;
 	flex-direction: column;
 	position: relative; /* Añadimos posición relativa para que el z-index funcione */
 	z-index: 10;
@@ -10,6 +10,8 @@
 	@media (min-width: 768px) {
 		top: 50px;
 		right: 80px;
+		
+		
 	}
 
 	&_containerWrite {
@@ -21,11 +23,13 @@
 
 		@media (min-width: 768px) {
 			height: 40%;
+			flex-direction: row;
+			//justify-content: center;
 		}
 
-    @media (min-width: 768px) {
-      transform: translateX(-28px);
-    }
+    	@media (min-width: 768px) {
+      	transform: translateX(-28px);
+    	}
 	}
 	&_containerLetters {
 		display: flex;
