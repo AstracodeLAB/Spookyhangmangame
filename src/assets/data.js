@@ -31,7 +31,7 @@ const movies = JSON.parse(`[
 	},
 	{
 		"id": 3,
-		"day": 20241016,
+		"day": 20241017,
 		"movie": "EL SILENCIO DE LOS CORDEROS",
 		"title_win": "El silencio de los corderos",
 		"title_win_mobile": "En 'El silencio de los corderos', una joven agente del FBI colabora con Hannibal Lecter para atrapar a un asesino.",

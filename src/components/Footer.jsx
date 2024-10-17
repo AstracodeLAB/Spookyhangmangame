@@ -11,16 +11,16 @@ const Footer = () => {
 			<div className='footer_content'>
 				<p className='footer__text'>¿Quieres una web?</p>
 				<div className='footer__icons'>
-					<a href='https://www.facebook.com' target='_blank' rel='noopener noreferrer'>
+					<a href='https://www.facebook.com/people/Astracodelab/61564205213789/?_rdr' target='_blank' rel='noopener noreferrer'>
 						<img className='footer__icon' src={facebookLogo} alt='Logo de Facebook' />
 					</a>
-					<a href='https://www.instagram.com' target='_blank' rel='noopener noreferrer'>
+					<a href='https://www.instagram.com/astracodelab/' target='_blank' rel='noopener noreferrer'>
 						<img className='footer__icon' src={instagramLogo} alt='Logo de Instagram' />
 					</a>
-					<a href='https://www.linkedin.com' target='_blank' rel='noopener noreferrer'>
+					<a href='https://www.linkedin.com/company/astracodelab' target='_blank' rel='noopener noreferrer'>
 						<img className='footer__icon' src={linkedinLogo} alt='Logo de LinkedIn' />
 					</a>
-					<a href='https://www.threads.net' target='_blank' rel='noopener noreferrer'>
+					<a href='https://www.threads.net/@astracodelab' target='_blank' rel='noopener noreferrer'>
 						<img className='footer__icon footer__icon--threads' src={threadsLogo} alt='Logo de Threads' />
 					</a>
 				</div>
