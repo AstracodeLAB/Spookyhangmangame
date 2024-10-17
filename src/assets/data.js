@@ -76,7 +76,7 @@ const movies = JSON.parse(`[
 	},
 	{
 		"id": 6,
-		"day": 20241016,
+		"day": 20241017,
 		"movie": "LA MUERTE OS SIENTA TAN BIEN",
 		"title_win": "La muerte os sienta tan bien",
 		"title_win_mobile": "En 'La muerte os sienta tan bien', Helen y Madeline toman una poción de inmortalidad con consecuencias hilarantes.",
