@@ -21,28 +21,40 @@
 		flex-direction: row;
 		justify-content: flex-end;
 
+		@media (min-width: 576px) {
+			height: 40%;
+			flex-direction: row;
+			width: 100%;
+			justify-content: center;
+			//transform: translateX(-28px);
+		}
+
 		@media (min-width: 768px) {
 			height: 40%;
 			flex-direction: row;
-			//justify-content: center;
+			width: 100%;
+			justify-content: center;
+			//transform: translateX(-28px);
 		}
 
-    	@media (min-width: 768px) {
-      	transform: translateX(-28px);
+    	@media (min-width: 1440px) {
+			width: 100%;
+			justify-content: center;
     	}
 	}
 	&_containerLetters {
 		display: flex;
 		flex-direction: column;
+		
 
     @media (min-width: 768px) {
       align-items: center;
-      transform: translateX(60px);
+      //transform: translateX(60px);
     }
 
     @media (min-width: 1440px) {
 
-      transform: translateX(-70px)
+     // transform: translateX(-70px)
     }
 	}
 }
@@ -52,15 +64,15 @@
 	text-align: center;
 
   @media (min-width: 768px) {
-    transform: translateX(-80px);
+    //transform: translateX(-+60px);
   }
 
   @media (min-width: 1024px) {
-    transform: translateX(-80px);
+   // transform: translateX(-80px);
   }
 
   @media (min-width: 1440px) {
-    transform: translateX(-314px);
+   // transform: translateX(-314px);
   }
 
 	&__input {

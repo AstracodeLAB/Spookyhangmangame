@@ -9,10 +9,16 @@ $dummyTransitionTime: 1s;
   height: 25rem;
   width: 40%;
   z-index: 5;
+  @media (min-width: 420px) {
+    // margin-left: 0;
+    width: 0;
+    margin-left: 4rem;
+  }
 
   @media (min-width: 768px) {
     // margin-left: 0;
     width: 0;
+    margin-left: 4rem;
   }
 
   @media (min-width: 1024px) {
