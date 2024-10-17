@@ -1,18 +1,18 @@
-import { useState, useEffect, useContext, useRef, createContext } from 'react';
-import Header from '@components/Header';
-import Text from '@components/Text';
-import Footer from '@components/Footer';
+import { useState, useEffect, useContext } from 'react';
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
+import { allowedCharsRegExp } from './components/alpha';
+import { AudioContext } from './components/AudioContext';
+import Header from '@components/Header';
+import Modal from '.components/Modal';
+import Text from '@components/Text';
+import Dummy from '@components/Dummy';
+import Footer from '@components/Footer';
 import Instructions from '@components/Instructions';
 import MoreOptions from '@components/MoreOptions';
-import Dummy from '@components/Dummy';
-import Modal from '@components/Modal';
 import movies from './assets/data';
 import './App.scss';
-import { allowedCharsRegExp } from './components/alpha';
 import GifDesktop from './assets/calabazaGif.gif';
 import GifMob from './assets/calabazaGifMob.gif';
-import { AudioContext } from './components/AudioContext';
 
 function App() {
 	const [keyword, setKeyword] = useState('');
