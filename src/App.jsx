@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext, useRef, createContext } from 'react';
 import Header from '@components/Header';
 import Text from '@components/Text';
 import Footer from '@components/Footer';
@@ -12,6 +12,8 @@ import './App.scss';
 import { allowedCharsRegExp } from './components/alpha';
 import GifDesktop from './assets/calabazaGif.gif';
 import GifMob from './assets/calabazaGifMob.gif';
+import { AudioContext } from './components/AudioContext';
+
 
 function App() {
 	const [keyword, setKeyword] = useState('');
@@ -20,6 +22,9 @@ function App() {
 	const [correctLetters, setCorrectLetters] = useState([]);
 	const [isWinner, setIsWinner] = useState(false);
 	const [showModal, setShowModal] = useState(false);
+	const { isPlaying } = useContext(AudioContext)
+
+	console.log(isPlaying)
 
 	//Aqui pondremos un objeto: cada día el nombre de una peli
 	useEffect(() => {
@@ -27,6 +32,7 @@ function App() {
 		console.log(spookyMovie.movie);
 		setKeyword(spookyMovie.movie);
 		setTodayMovie(spookyMovie);
+
 	}, []);
 
 	const processGameStatus = () => {
@@ -52,22 +58,40 @@ function App() {
 
 	//Mostrar las letras correctas
 	const renderSolutionLetters = () => {
-		const wordLetters = keyword.split('');
-		//quitar guión cuando es espacio e ignorar la letra ok.
-		return wordLetters.map((letter, index) => {
-			if (letter === ' ') {
-				return <li key={index} className='noLetter'></li>;
-			}
-			if (letter !== ' ' && correctLetters.includes(letter)) {
-				return (
-					<li key={index} className='letter'>
-						{letter}
-					</li>
-				);
-			} else {
-				return <li key={index} className='letter'></li>;
-			}
-		});
+		const words = keyword.split(' ')
+
+		return words.map((word, wordIdx)=>{
+			const letters = word.split('')
+			return (
+				<div className="word" key={wordIdx}>
+				{letters.map((letter, letterIdx)=>{
+					return (<li key={letterIdx} className='letter'>
+						{correctLetters.includes(letter) && letter}
+					</li>)
+				})}
+
+				</div>
+			)
+		})
+
+		// const wordLetters = keyword.split('');
+		// //quitar guión cuando es espacio e ignorar la letra ok.
+		// return wordLetters.map((letter, index) => {
+		// 	if (letter === ' ') {
+		// 		return <li key={index} className='noLetter'></li>;
+		// 	}
+		// 	if (letter !== ' ' && correctLetters.includes(letter)) {
+		// 		return (
+		// 			<li key={index} className='letter'>
+		// 				{letter}
+		// 			</li>
+		// 		);
+		// 	} else {
+		// 		return (<>
+		// 			<li key={index} className='letter'></li>
+		// 		</>);
+		// 	}
+		// });
 	};
 
 	//Mostrar las letras erróneas
@@ -123,8 +147,11 @@ function App() {
 	const gameOver = processGameStatus();
 
 	return (
+
 		<div className='page'>
-			<Header text='Spooky Hangman Game' />
+			<Header 
+			text='Spooky Hangman Game'
+			/>
 			<BrowserRouter>
 				<Routes>
 					<Route path='/instructions' element={<Instructions />} />
@@ -180,22 +207,26 @@ function App() {
 											</button>
 										</div>
 										</div>
-										
-										<audio autoPlay>
+										{isPlaying && <audio autoPlay>
 											<source src='evil-laugh1.mp3' type='audio/mp3' />
 											Tu navegador no soporta el elemento de audio.
 										</audio>
-										
+										}
 									</div>
 								)}
-								
 							</main>
 						}
 					/>
 				</Routes>
 			</BrowserRouter>
 			<Footer />
+			{isPlaying && <audio autoPlay loop>
+				<source src='creepy-party.mp3' type='audio/mp3' />
+				Tu navegador no soporta el elemento de audio.
+			</audio>
+			}
 		</div>
+	
 	);
 }
 

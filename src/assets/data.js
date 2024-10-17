@@ -1,7 +1,7 @@
 const movies = JSON.parse(`[
 	{
 		"id": 1,
-		"day": 20241016,
+		"day": 20241022,
 		"movie": "JENNIFERS BODY",
 		"title_win": "Jennifer's Body",
 		"title_win_mobile": "En 'Jennifer's Body', una animadora poseída por un demonio se alimenta de los chicos de su instituto.",
@@ -76,7 +76,7 @@ const movies = JSON.parse(`[
 	},
 	{
 		"id": 6,
-		"day": 20241027,
+		"day": 20241017,
 		"movie": "LA MUERTE OS SIENTA TAN BIEN",
 		"title_win": "La muerte os sienta tan bien",
 		"title_win_mobile": "En 'La muerte os sienta tan bien', Helen y Madeline toman una poción de inmortalidad con consecuencias hilarantes.",

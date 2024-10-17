@@ -1,8 +1,13 @@
 import Bat from '../assets/bat.svg'; 
+import { useContext } from "react";
+import { AudioContext } from "./AudioContext";
+
 
 // eslint-disable-next-line react/prop-types
 const Modal = ({ showModal, closeModal, todayMovie }) => {
-  if (!showModal) return null; // Si showModal es false, no muestra nada
+	const { isPlaying } = useContext(AudioContext)
+  
+	if (!showModal) return null; // Si showModal es false, no muestra nada
   //if (closeModal) return null; // Si showModal es false, no muestra nada
 
 	return (
@@ -39,11 +44,13 @@ const Modal = ({ showModal, closeModal, todayMovie }) => {
 							*Oferta válida hasta el 1 de noviembre de 2024 con el <span className='green'>código ASTRACODE</span>
 						</p>
 					</div>
-					<audio autoPlay>
+					{isPlaying && <audio autoPlay >
 						<source src="aleteo.mp3" type="audio/mp3" />
 						Tu navegador no soporta el elemento de audio.
 					</audio>
+					}
 				</div>
+					
 
 				<div className='modal-buttons'>
 					<button onClick={closeModal}>Cerrar</button>

@@ -8,8 +8,8 @@
 	line-height: 1;
 	text-align: center;
 	letter-spacing: 0.3rem;
-
 	width: 95%;
+
 	@media (min-width: 768px) {
 		font-size: 1.5rem;
 	}
@@ -144,4 +144,7 @@
 			}
 		}
 	}
+}
+.word {
+	display: flex;
 }
