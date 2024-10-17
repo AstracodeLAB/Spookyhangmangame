@@ -68,7 +68,7 @@
 	}
 	.message-win-mobile {
 		// padding: 20px;
-		// margin: 0;
+		
 
 		@media (min-width: 768px) {
 			display: none;
@@ -136,7 +136,7 @@
 		}
 	}
 	.message-astra-advice {
-		// margin-bottom: 40px;
+		
 		margin: 0;
 
 		@media (min-width: 768px) {
@@ -162,14 +162,25 @@
 			height: 200px;
 		}
 	}
+	.buttonsModalContainer {
+		display: flex;
+		flex-direction: column;
+		@media (min-width: 768px) {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
 
 	.modal-buttons {
 		display: flex;
 		justify-content: space-around;
+		
 
 		button {
 			font-size: 1rem;
 			margin-top: 15px;
+			margin-bottom: 15px;
 			padding: 10px 20px;
 			border: none;
 			background-color: #fb3c2d;
@@ -190,6 +201,20 @@
 			}
 		}
 	}
+}
+.game-over-button-contact {
+	padding: 10px 20px;
+  border: none;
+  background-color: #171211;
+  font-family: "Creepster", system-ui;
+  font-size: 1rem;
+  color: rgb(253, 224, 224);
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+	margin-top: 15px;
+  box-shadow: 2px 4px 6px #FF7603;
+  text-shadow: 4px 4px 6px black;
 }
 .movie-content {
 	display: flex;

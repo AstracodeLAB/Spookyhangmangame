@@ -22,10 +22,12 @@ body {
 
 
 .containerGameOver{
-  padding-top: 60px;
+  //padding-top: 60px;
   display: flex;
   flex-direction: column;
-  
+  @media (min-width: 1024px) {
+    padding-top: 0;
+  }
   
 
     &__game-over{
@@ -36,15 +38,22 @@ body {
       text-shadow: 4px 4px 6px black;
       margin: 5px 5px 5px 5px;
       font-size: 0.8rem;
-    }
       @media (min-width: 768px) {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
       
       }
     
       @media (min-width: 1024px) {
+        font-size: 1.2rem;
+      }
+      @media (min-width: 1260px) {
+        font-size: 1.8rem;
+      }
+      @media (min-width: 1440px) {
         font-size: 2rem;
       }
+    }
+      
     
     &__game-over-retry{
       margin: 5px 15px 10px 15px;
@@ -62,7 +71,14 @@ body {
        }
   
       @media (min-width: 1024px) {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+      }
+      @media (min-width: 1260px) {
+        font-size: 2.4rem;
+      }
+      @media (min-width: 1440px) {
+        font-size: 3rem;
       }
     }
 }
@@ -84,11 +100,15 @@ body {
   text-shadow: 4px 4px 6px black;
   box-shadow: 2px 4px 6px #FF7603;
   @media (min-width: 768px) {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     }
     @media (min-width: 1024px) {
       font-size: 2rem;
     }
+    @media (min-width: 1440px) {
+      font-size: 2.6rem;
+    }
+    
   &:hover {
     background-color: #FF7603;
   }
@@ -109,10 +129,13 @@ body {
   box-shadow: 2px 4px 6px #FF7603;
   text-shadow: 4px 4px 6px black;
   @media (min-width: 768px) {
-    font-size: 1rem;
+    font-size: 1.4rem;
     }
     @media (min-width: 1024px) {
       font-size: 1.5rem;
+    }
+    @media (min-width: 1440px) {
+      font-size: 2.6rem;
     }
 
   &:hover {

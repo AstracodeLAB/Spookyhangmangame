@@ -51,8 +51,23 @@ const Modal = ({ showModal, closeModal, todayMovie }) => {
           </audio>
           }
         </div>
-        <div className='modal-buttons'>
-          <button onClick={closeModal}>Cerrar</button>
+        <div className='buttonsModalContainer'>
+          <div className='modal-buttons'>
+            <button onClick={closeModal}>Cerrar</button>
+          </div>
+          <div className='modal-buttons-contact'>
+          <button
+                            className='game-over-button-contact'
+                            onClick={() =>
+                              window.open(
+                                'https://docs.google.com/forms/d/e/1FAIpQLSdj6jwZ5bnhqcTR_fWHebJObl8caKhlROcOrgBdnPCpXz8fAA/viewform',
+                                '_blank'
+                              )
+                            }
+                          >
+                            ¿Quieres una web?
+                          </button>
+        </div>
         </div>
       </div>
     </div>
