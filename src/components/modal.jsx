@@ -10,6 +10,7 @@ const Modal = ({ showModal, closeModal, todayMovie }) => {
 	if (!showModal) return null; // Si showModal es false, no muestra nada
   //if (closeModal) return null; // Si showModal es false, no muestra nada
 
+	
 	return (
 		<div className='modal-overlay'>
 			<div className='modal-content'>
