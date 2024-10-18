@@ -151,7 +151,9 @@ function App() {
 						path='/'
 						element={
 							<main className='main'>
-								<Dummy wrongLetters={wrongLetters} />
+								<div>
+									{!gameOver && !isWinner &&	<Dummy wrongLetters={wrongLetters} />}
+								</div>
 								{!gameOver && !isWinner && (
 									<Text
 										renderSolutionLetters={renderSolutionLetters}
@@ -172,7 +174,7 @@ function App() {
 								) : null}
 								{gameOver && (
 									<div className='spamTryAgain'>
-										<div className='containerCalabaza'>
+										{/* <div className='containerCalabaza'>
 											<div className='containerCalabaza__calabaza'>
 												<picture>
 													<source media='(min-width: 1024px)' srcSet={GifDesktop} />
@@ -180,6 +182,9 @@ function App() {
 													<img className='containerCalabaza__calabaza__gif' src={GifMob} alt='Calabaza' />
 												</picture>
 											</div>
+										</div> */}
+										<div className='dummy_dead'>
+											<Dummy wrongLetters={wrongLetters} />
 										</div>
 										<div className='containerGameOver'>
 											<p className='containerGameOver__game-over'>Los fantasmas lo celebran... </p>

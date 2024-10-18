@@ -16,7 +16,7 @@ const movies = JSON.parse(`[
 	},
 	{
 		"id": 2,
-		"day": 20241023,
+		"day": 20241018,
 		"movie": "CARRIE",
 		"title_win": "Carrie",
 		"title_win_mobile": "En 'Carrie', una adolescente socialmente aislada desata su ira telequinética después de ser brutalmente acosada.",
@@ -76,7 +76,7 @@ const movies = JSON.parse(`[
 	},
 	{
 		"id": 6,
-		"day": 20241017,
+		"day": 20241027,
 		"movie": "LA MUERTE OS SIENTA TAN BIEN",
 		"title_win": "La muerte os sienta tan bien",
 		"title_win_mobile": "En 'La muerte os sienta tan bien', Helen y Madeline toman una poción de inmortalidad con consecuencias hilarantes.",

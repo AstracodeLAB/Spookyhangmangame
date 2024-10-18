@@ -22,11 +22,14 @@ body {
 
 
 .containerGameOver{
-  //padding-top: 60px;
+ // padding-top: 200px;
   display: flex;
   flex-direction: column;
+    @media (min-width: 768px) {
+        padding-top: 80px;
+      }
   @media (min-width: 1024px) {
-    padding-top: 0;
+    padding-top: 80px;
   }
   
 

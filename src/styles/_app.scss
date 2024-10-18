@@ -107,8 +107,8 @@
 
 }
 .spamTryAgain {
-	position: relative;
-	z-index: 10;
+	//position: relative;
+	// z-index: 10;
 	top: -180px;
 	display: flex;
 	flex-direction: column;
@@ -116,7 +116,7 @@
 	@media (min-width: 768px) {
 		top: 0px;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		gap: 10px;
 		align-items: center;
 	}
