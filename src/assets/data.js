@@ -22,7 +22,7 @@ const movies = JSON.parse(`[
 		"title_win_mobile": "En 'Carrie', una adolescente socialmente aislada desata su ira telequinética después de ser brutalmente acosada.",
 		"year_win": 1976,
 		"director_win": "Brian de Palma",
-		"description_win": "Cuenta la historia de Carrie White, una adolescente socialmente aislada que, después de ser brutalmente acosada...",
+		"description_win": "Cuenta la historia de Carrie White, una adolescente socialmente aislada que, después de ser brutalmente acosada, desata su ira sobre sus compañeros.",
 		"message_win": "🎉 ¡Felicidades! Menos mal que no estabas en el baile de graduación... ¡Carrie no te habría dejado salir tan fácilmente! 💥",
 		"message_win_mobile": "🎉 ¡Te salvaste del baile de Carrie! 💃",
 		"image_win": "./2.Carrie-win.png",
