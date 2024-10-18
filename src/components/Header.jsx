@@ -13,7 +13,7 @@ const Header = (props) => {
       <div className='header__intro'>
 				<p className='header__paragraph header__paragraph--1'>
           Te retamos a adivinar películas de miedo en este juego del ahorcado (versión Halloween). Activa el audio para disfrutar mejor de la experiencia. 
-          <button
+          <button className="sound_button"
             onClick={toggleAudio}>{isPlaying ? ('🔊') : ('🔇')}
           </button>  
 				</p>

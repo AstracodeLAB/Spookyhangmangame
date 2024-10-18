@@ -198,7 +198,7 @@ function App() {
 													className='game-over-button-contact'
 													onClick={() =>
 														window.open(
-															'https://docs.google.com/forms/d/e/1FAIpQLSdj6jwZ5bnhqcTR_fWHebJObl8caKhlROcOrgBdnPCpXz8fAA/viewform',
+															'https://h6oav78nvip.typeform.com/to/MjgF68AH',
 															'_blank'
 														)
 													}
