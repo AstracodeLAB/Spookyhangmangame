@@ -112,7 +112,7 @@
 		}
 
 		@media (min-width: 1440px) {
-			width: 60%;
+			width: 100%;
 			margin: 0 auto;
 		}
 	}
@@ -173,7 +173,9 @@
 			flex-direction: row;
 			justify-content: space-between;
 			align-items: center;
+		
 		}
+		
 	}
 
 	.modal-buttons {
