@@ -16,7 +16,7 @@ const movies = JSON.parse(`[
 	},
 	{
 		"id": 2,
-		"day": 20241020,
+		"day": 20241023,
 		"movie": "CARRIE",
 		"title_win": "Carrie",
 		"title_win_mobile": "En 'Carrie', una adolescente socialmente aislada desata su ira telequinética después de ser brutalmente acosada.",
